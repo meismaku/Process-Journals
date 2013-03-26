@@ -52,6 +52,7 @@ h4 {
 h4:hover {
 	color:#7D8891;
 	cursor:pointer;
+	background: pink;
 }
 
 #logo {
