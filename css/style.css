@@ -1,0 +1,79 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#cont {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+#sidebar {
+	position: fixed;
+	z-index: 100;
+	padding: 20px;
+	height: 100%;
+	width: 180px;
+	color: white;
+	background: #3D79D0;
+	left: -200;
+}
+
+#main {
+	position: absolute;
+	z-index: 1;
+	margin: 0;
+	padding: 20px;
+	height: 100%;
+	width: 100%;
+	background: #F3F3F3;
+	left:20;
+}
+
+h1, h2, h3 {
+	font-weight: 100;
+}
+
+
+h4 {
+	font-weight: 600;
+	font-size: 15px;
+}
+
+h4:hover {
+	background: red;
+}
+
+#logo {
+	margin-bottom: 0;	
+}
+
+#tocTitle {
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(33,33,33,0.3);
+}
+
+#logotitle {
+	line-height: 25px;
+	color: #7D8891;
+}
+
+.story {
+	border-bottom: 1px solid #393939;
+}
+
+.story h1, .story h2, .story h3 {
+	color: #7D8891
+}
+
+#toggleButton {
+	position: absolute;
+	right: 0;
+	top: 5;
+	height: 15px;
+	width: 10px;
+	background: #393939;
+	text-align: right;
+	cursor: pointer;
+	
+	padding: 5px;
+}
