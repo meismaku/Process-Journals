@@ -220,7 +220,7 @@ ul#storyline li.time{
 /*  */
 
 .story-item .left-story {
-	width: 52%;
+	width: 53%;
 	float: left;
 	text-align: right;
 }
@@ -236,7 +236,7 @@ ul#storyline li.time{
 }
 
 .story-item .right-story {
-	width: 44%;	
+	width: 43%;	
 	float: right;
 	position: relative;
 }
@@ -247,8 +247,9 @@ ul#storyline li.time{
 .story-item h3 {
 	font-size: 16px;
 	font-weight: 400;
-	opacity: 0.8;
+	opacity: 0.7;
 	line-height: 24px;
+	margin-bottom: 10px;
 }
 
 .story-item h3 b{
@@ -262,6 +263,51 @@ ul#storyline li.time{
 
 /* slider */
 
-.slider {
+ul#storyline .slider { 
+	position: relative; 
+	overflow: auto; 
+	list-style-type: none; 
+	width: 100%;
 	text-align: left;
+	padding: 0;
+}
+ul#storyline .slider ul, ul#storyline .slider ol{ 
+	margin: 0 !important; 
+}
+ul#storyline .slider li { list-style: none; }
+ul#storyline .slider ul li { float: left; max-width: 920px; max-height: 330px; padding: 0; margin: 0; overflow: hidden;}
+
+ul#storyline .slider .btn, .slider .dot {
+	-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
+	-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
+	-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
+	-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
+	filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
+}
+
+ul#storyline .slider .dots {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+}
+ul#storyline .slider .dots li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 4px;
+	padding: 0;
+	color: rgba(0,0,0,0);
+	border: 2px solid #fff;
+	border-radius: 6px;
+
+	cursor: pointer;
+	opacity: .6;
+
+	-webkit-transition: background .5s, opacity .5s;
+	-moz-transition: background .5s, opacity .5s;
+	transition: background .5s, opacity .5s;
+}
+ul#storyline .slider .dots li.active {
+	background: #fff;
+	opacity: 1;
 }
