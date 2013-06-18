@@ -260,3 +260,8 @@ ul#storyline li.time{
 	max-width: 670px;
 }
 
+/* slider */
+
+.slider {
+	text-align: left;
+}

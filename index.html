@@ -30,6 +30,7 @@
 			<li attr="web"><a>website</a></li> <!-- filter class= 'web' -->
 			<li attr="concept"><a>concept</a></li> <!-- filter class= 'concept' -->
 			<li attr="mock"><a>mockups</a></li> <!-- filter class= 'mock' -->
+			<li attr="ux"><a>user experience</a></li> <!-- filter class= 'ux' -->
 		</ul>
 	</div> <!-- emd sidebar -->
 	<div id="main">
@@ -64,11 +65,22 @@
 					<img src="img/assets/v0_bho_mock_1.jpg" alt="v0_bho_1" width="430" />
 				</div>
 				<div class="right-story">					
-						<h2 class="title">Initial Mockup</h2>
+						<h2 class="title">Initial UI Mockup</h2>
 						<h3 class="type"><b>BHO</b> / v0</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum. Aenean lacinia, augue non ornare scelerisque, purus mauris volutpat tortor, euismod lorem nisi vel tortor. Donec vel egestas magna. Vivamus ante erat, semper in neque porttitor, convallis pharetra ante. Cras vel neque tincidunt, rutrum urna id, tristique erat. Donec suscipit eros eget nunc pellentesque, a aliquam ipsum.</p>
 				</div>
 			</li>
+			<li class="story-item ux">
+				<div class="left-story">
+					<img src="img/assets/3-UXflow-V0mock.jpg" alt="v0_bho_1" width="430" />
+				</div>
+				<div class="right-story">					
+						<h2 class="title">Initial UX & Interaction Design</h2>
+						<h3 class="type"><b>BHO</b> / v0</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum. Aenean lacinia, augue non ornare scelerisque, purus mauris volutpat tortor, euismod lorem nisi vel tortor. Donec vel egestas magna. Vivamus ante erat, semper in neque porttitor, convallis pharetra ante. Cras vel neque tincidunt, rutrum urna id, tristique erat. Donec suscipit eros eget nunc pellentesque, a aliquam ipsum.</p>
+				</div>
+			</li>
+
 			
 			<li class="time"><h4><b>08</b>/12</li> <!-- DATE 08/12 -->
 			
@@ -78,7 +90,13 @@
 			
 			<li class="story-item cat">
 				<div class="left-story">
-					<img src="http://placehold.it/390x250">
+					<div class="slider">
+					    <ul>
+					        <li>This is a slide.</li>
+					        <li>This is another slide.</li>
+					        <li>This is a final slide.</li>
+					    </ul>
+					</div>
 				</div>
 				<div class="right-story">					
 						<h2 class="title">Objective</h2>
@@ -127,7 +145,7 @@
 	</div> <!-- end div#main --> 
 </div> <!-- end div#cont --> 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
+<script src="js/unslider.min.js"></script>
 
 <script type="text/javascript">
 	
@@ -164,6 +182,8 @@ $(function () {
     };
     $('#filterclose').click(filterClose);
     $('#white-overlay').click(filterClose);
+    
+    $('.slider').unslider(); //UNSLIDER
     
 });
 $("#filter-list>li").hover(
