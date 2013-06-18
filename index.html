@@ -10,33 +10,94 @@
 </head>
 <body>
 <div id="cont">
-	<div id="sidebar">
-		<h2 id="tocTitle">Table of Contents</h2>
-		<h4 class="toc">Initial Brief</h4>
-		<h4 class="toc">Wireframes</h4>
-		<h4 class="toc">Mockups Round 1</h4>
-		<h4 class="toc">Mockups Round 2</h4>
-		<h4 class="toc">Development</h4>
-		<hr />
-		
-		<div id="toggleButton"><div id="iconImg"><i class="icon-double-angle-right"></i></div></div>
-	</div>
-	<div id="main">
-		<ul>
-		<li><h1><img src="img/logo.png" alt="logo" width="170"></h1></li>
-		<li><h3 id="logotitle">Production Journal</h3></li>
-		</ul>
-		<hr />
-		<div class="story">
-			<h2>The Team </h2>
-			<h4>Mark Bumanglag</h4>
-			<h4>JaKyung Kim</h4>
-			<h4>Eric Townsend</h4>
-			<h4>Rachel Schmitz</h4>
-			<h4>Michelle Ho</h4>
-			<h4>Andressa Anantharaju</h4>
+	<div id="top"><div id="white-overlay"></div> <!-- overlay -->
+		<div id="logo">
+			<img src="img/avglogo.svg" width="90px" height="" />
 		</div>
-	</div>
+		<div id="about">The Team</div>
+		<div id="filters">Filters</div>
+		
+		<div id="filterclose">Hide Filters</div>
+
+
+	</div> <!-- end div#top -->
+	<div id="sidebar">
+		<h2 id="filter">Filter List</h2>
+		<ul id="filter-list">
+			<li id="all" attr="all"><a class="current">no filters</a></li>
+			<hr />
+			<li attr="bho"><a>bho</a></li> <!-- filter class= 'bho' -->
+			<li attr="web"><a>website</a></li> <!-- filter class= 'web' -->
+			<li attr="concept"><a>concept</a></li> <!-- filter class= 'concept' -->
+			<li attr="mock"><a>mockups</a></li> <!-- filter class= 'mock' -->
+		</ul>
+	</div> <!-- emd sidebar -->
+	<div id="main">
+		<div id="overview">
+			<h1><img src="img/AVG-Rewards-whitelogo.png" alt="AVG-Rewards-whitelogo" width="" height="" /></h1>
+			<p>AVG Rewards is a new project initiative that allows AVG Technologies to break into the global e-commerce market. The goal of the project is to offer a browser extension and complimentary website that allows users to find deals easily while they are shopping online. This is the case study of 'Platform UX' team's development of the design.</p>
+		</div>
+		<ul id="storyline">
+			<li class="time"><h4><b>07</b>/12</li> <!-- DATE 07/12 -->
+			
+			<li class="story-item concept">
+				<div class="left-story">
+					<img src="http://placehold.it/430x250">
+				</div>
+				<div class="right-story">					
+						<h2 class="title">Objective</h2>
+						<h3 class="type"><b>Concept</b> / proposal</h3>
+				</div>
+			</li>
+			<li class="story-item concept bho">
+				<div class="left-story">
+					<img src="img/assets/v0_bho_1.jpg" alt="v0_bho_mock_1" width="430" height="" />
+				</div>
+				<div class="right-story">					
+						<h2 class="title">Conceptual Mockup</h2>
+						<h3 class="type"><b>BHO</b> / v0</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum. Aenean lacinia, augue non ornare scelerisque, purus mauris volutpat tortor, euismod lorem nisi vel tortor. Donec vel egestas magna. Vivamus ante erat, semper in neque porttitor, convallis pharetra ante. Cras vel neque tincidunt, rutrum urna id, tristique erat. Donec suscipit eros eget nunc pellentesque, a aliquam ipsum.</p>
+				</div>
+			</li>
+			<li class="story-item mock">
+				<div class="left-story">
+					<img src="img/assets/v0_bho_mock_1.jpg" alt="v0_bho_1" width="430" />
+				</div>
+				<div class="right-story">					
+						<h2 class="title">Initial Mockup</h2>
+						<h3 class="type"><b>BHO</b> / v0</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum. Aenean lacinia, augue non ornare scelerisque, purus mauris volutpat tortor, euismod lorem nisi vel tortor. Donec vel egestas magna. Vivamus ante erat, semper in neque porttitor, convallis pharetra ante. Cras vel neque tincidunt, rutrum urna id, tristique erat. Donec suscipit eros eget nunc pellentesque, a aliquam ipsum.</p>
+				</div>
+			</li>
+			
+			<li class="time"><h4><b>08</b>/12</li> <!-- DATE 08/12 -->
+			
+			
+			
+			<li class="time"><h4><b>09</b>/12</li> <!-- DATE 09/12 -->
+			
+			<li class="story-item cat">
+				<div class="left-story">
+					<img src="http://placehold.it/390x250">
+				</div>
+				<div class="right-story">					
+						<h2 class="title">Objective</h2>
+						<h3 class="type">concept / ideas</h3>
+				</div>
+			</li>
+			
+			<li class="time"><h4><b>10</b>/12</li> <!-- DATE 10/12 -->
+			<li class="time"><h4><b>11</b>/12</li> <!-- DATE 11/12 -->
+			<li class="time"><h4><b>12</b>/12</li> <!-- DATE 12/12 -->
+			<li class="time"><h4><b>01</b>/13</li> <!-- DATE 01/13 -->
+			<li class="time"><h4><b>02</b>/13</li> <!-- DATE 02/13 -->
+			<li class="time"><h4><b>03</b>/13</li> <!-- DATE 03/13 -->
+			<li class="time"><h4><b>04</b>/13</li> <!-- DATE 04/13 -->
+			<li class="time"><h4><b>05</b>/13</li> <!-- DATE 05/13 -->
+			<li class="time"><h4><b>06</b>/13</li> <!-- DATE 06/13 -->
+		</ul>
+		
+	</div> <!-- end div#main --> 
 </div> <!-- end div#cont --> 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
@@ -45,27 +106,76 @@
 	
 $(function () {
 	var isSidebarOpen = 0; //0 is closed, 1 is open
-	$('#toggleButton').click(function(){
+	$('#filters').click(function(){
 		if( isSidebarOpen == 0 ){
-    		$('#sidebar').animate({left:'0px'});
-    		$('#main').animate({left:'220px'});
-    		$('#iconImg').rotate({animateTo:180});
-    		
+    		$('#sidebar').animate({right:'0'});
+    		$('#white-overlay').css({display:'block'});
+    		$('#filters').addClass('on');
+    		$('#filterclose').css({display:'block'}).animate({opacity:1},300);
     		isSidebarOpen = 1;
-
     	} else if( isSidebarOpen == 1 ){
-	    	$('#sidebar').animate({left:'-200px'});
-    		$('#main').animate({left:'20px'});
-    		$('#iconImg').rotate({animateTo:0});
+	    	$('#sidebar').animate({right:'-240px'});
+	    	$('#white-overlay').delay(300).queue( function(next){ 
+				$(this).css('display','none'); 
+				next(); 
+			});
+	    	$('#filters').removeClass('on');
+	    	$('#filterclose').animate({opacity:0}).css({display:'none'});
     		isSidebarOpen = 0;
     	};
     });
-	
-	    
-	
+    
+    function filterClose(){
+	    $('#sidebar').animate({right:'-240px'});
+    	$('#white-overlay').delay(300).queue( function(next){ 
+			$(this).css('display','none'); 
+			next(); 
+		});
+    	$('#filters').removeClass('on');
+    	$('#filterclose').animate({opacity:0}).css({display:'none'});
+		isSidebarOpen = 0;
+    };
+    $('#filterclose').click(filterClose);
+    $('#white-overlay').click(filterClose);
     
 });
-
+$("#filter-list>li").hover(
+	function(){ 
+		$(this).find('a').addClass('hover');
+	},
+	function(){
+		$(this).find('a').removeClass('hover');
+});
+var filtered = 0; //0 is none, 1+ is filtered
+$("#filter-list>li").click(function(){
+	var filterClass = $(this).attr('attr');
+	if(filterClass == "all") {
+		$("#filter-list>li>a").removeClass('current');
+		$(this).find('a').addClass('current');
+		$("#storyline li").show();
+		$("#all").find('a').html('no filters');
+		filtered = 0;
+	} 
+	else {
+		if(filtered == 0){
+			$("#all").find('a').removeClass('current');
+			$(this).find('a').addClass('current');
+			$('#storyline li').not('.'+filterClass).not('.time').hide();
+			$("#storyline").find('.'+filterClass).show();
+			$("#all").find('a').animate({opacity:0},150);
+			$("#all").find('a').delay(100).queue( function(next){ 
+				$(this).html('reset filter'); 
+				next(); 
+			});
+			$("#all").find('a').animate({opacity:1},100); 
+			filtered = 1;
+		} else {
+			$(this).find('a').addClass('current');
+			$("#storyline").find('.'+filterClass).show();
+			$("#all").find('a').html('reset filters');
+		};
+ 	};
+});
 </script>
 </body>
 </html>
