@@ -119,14 +119,20 @@ h4 {
 	padding: 5px 10px;
 	color: rgba(57,57,57,0.4);
 	text-decoration: none;
+	-webkit-transition: color, background 0.1s ease-in-out;
+	-moz-transition: color, background 0.1s ease-in-out;
+	-o-transition: color, background 0.1s ease-in-out;
+	transition: color, background 0.1s ease-in-out;
 }
 
 #filter-list li a.hover {
-	color: rgba(162,48,48,0.7);
+	color: #fff;
+	background: rgba(57,57,57,1);
 }
 
 #filter-list li a.current {
-	color: rgba(57,57,57,1);
+	color: #fff;
+	background: rgba(57,57,57,1);
 }
 
 #filter-list hr {
