@@ -28,6 +28,7 @@
 			<li attr="concept"><a>concept</a></li> <!-- filter class= 'concept' -->
 			<li attr="mock"><a>mockups</a></li> <!-- filter class= 'mock' -->
 			<li attr="ux"><a>user experience</a></li> <!-- filter class= 'ux' -->
+			<li attr="wire"><a>wireframes</a></li> <!-- filter class= 'wire' -->
 			<li attr="proto"><a>interactive prototype</a></li> <!-- filter class= 'proto' -->
 		</ul>
 	</div> <!-- emd sidebar -->
@@ -212,7 +213,68 @@
 			
 			<li class="time"><h4><b>10</b>/12</li> <!-- DATE 10/12 -->
 			<li class="time"><h4><b>11</b>/12</li> <!-- DATE 11/12 -->
+			<!-- ------------------------------------------------- START WEB V1 -->
+			<li class="productSeperator"><h4><b>WEB</b> / v1</li> 
+			
+			<li class="story-item wire web"> <!-- START story-item -->
+				<div class="left-story">
+					<div class="left-wrap">
+						<div class="slider">
+						    <ul>
+						        <li class="slide"><img class="heightMax slide" src="img/assets/v1_bho_v1.jpg" alt="v0_bho_1" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/v1_bho_v2.jpg" alt="v0_bho_1" /></li>
+						    </ul>
+						</div>
+					</div>
+				</div>
+				<div class="right-story">					
+						<h2 class="title">Wireframes</h2>
+						<h3 class="type"><b>WEB</b> / v1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum.</p>
+				</div>
+			</li> <!-- END story-item -->
+			<li class="story-item mock bho"> <!-- START story-item -->
+				<div class="left-story">
+					<div class="left-wrap">
+						<div class="slider">
+						    <ul>
+						        <li class="slide"><img class="slide" src="img/assets/v1_rewards_merchant.jpg" alt="v0_bho_1" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/v1_rewards_home.jpg" alt="v0_bho_1" /></li>
+						    </ul>
+						</div>
+					</div>
+				</div>
+				<div class="right-story">					
+						<h2 class="title">Mockups</h2>
+						<h3 class="type"><b>WEB</b> / v1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum.</p>
+				</div>
+			</li> <!-- END story-item -->
+			
 			<li class="time"><h4><b>12</b>/12</li> <!-- DATE 12/12 -->
+			<!-- ------------------------------------------------- START WEB V2 -->
+			<li class="productSeperator"><h4><b>WEB</b> / v2</li> 
+			
+			<li class="story-item mock web"> <!-- START story-item -->
+				<div class="left-story">
+					<div class="left-wrap">
+						<div class="slider">
+						    <ul>
+						        <li class="slide"><img class="slide" src="img/assets/v2_rewards_home.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/v2_rewards_merchant.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/v2_rewards_search.jpg" /></li>
+						        
+						    </ul>
+						</div>
+					</div>
+				</div>
+				<div class="right-story">					
+						<h2 class="title">Visual Mockups</h2>
+						<h3 class="type"><b>WEB</b> / v2</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum.</p>
+				</div>
+			</li> <!-- END story-item -->
+			
 			<li class="time"><h4><b>01</b>/13</li> <!-- DATE 01/13 -->
 			<li class="time"><h4><b>02</b>/13</li> <!-- DATE 02/13 -->
 			<li class="time"><h4><b>03</b>/13</li> <!-- DATE 03/13 -->
@@ -226,9 +288,9 @@
 					</div>
 				</div>
 				<div class="right-story">					
-						<h2 class="title">Initial Mockup</h2>
+						<h2 class="title"> Mockup</h2>
 						<h3 class="type"><b>BHO</b> / v0</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum. Aenean lacinia, augue non ornare scelerisque, purus mauris volutpat tortor, euismod lorem nisi vel tortor. Donec vel egestas magna. Vivamus ante erat, semper in neque porttitor, convallis pharetra ante. Cras vel neque tincidunt, rutrum urna id, tristique erat. Donec suscipit eros eget nunc pellentesque, a aliquam ipsum.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 				</div>
 			</li> <!-- END story-item -->
 
@@ -293,7 +355,7 @@ $(function () {
    
     $('.slider').unslider({
     	speed: 500,               //  The speed to animate each slide (in milliseconds)
-		delay: 3000,              //  The delay between slide animations (in milliseconds)
+		delay: 3000000,              //  The delay between slide animations (in milliseconds)
 		pause: true,    		  // pause on hover (boolean)
 		complete: function() {},  //  A function that gets called after every slide animation
 		keys: true,               //  Enable keyboard (left, right) arrow shortcuts
