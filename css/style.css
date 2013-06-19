@@ -215,6 +215,19 @@ ul#storyline li.time {
 	color: white;
 }
 
+ul#storyline li.productSeperator{
+	background: rgb(237,237,237);
+	padding: 0;	
+}
+.productSeperator h4{
+	font-weight: 100;
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-left: 3%;
+	text-align: left;
+	color: rgb(156,165,178);
+}
+
 .story-item {
 	min-height: 200px;
 	border-bottom: 1px solid rgb(229,229,229); 
@@ -262,6 +275,7 @@ ul#storyline li.time {
 .story-item h3 {
 	font-size: 1.1em;
 	font-weight: 400;
+	letter-spacing: 1px;
 	opacity: 0.7;
 	margin-bottom: 10px;
 	line-height: 2.1em;
@@ -287,6 +301,14 @@ ul#storyline li.time {
 	background: #45A7EF;
 }
 
+/* story-item styles- PROTOTYPE */
+
+div.protoImg {
+	max-height: 350px;
+	overflow: hidden;
+	
+}
+
 /* slider */
 
 ul#storyline .slider { 
@@ -301,14 +323,16 @@ ul#storyline .slider ul, ul#storyline .slider ol{
 	margin: 0 !important; 
 }
 ul#storyline .slider li { list-style: none; }
-ul#storyline .slider ul li { float: left; max-width: 920px; max-height: 330px; padding: 0; margin: 0; overflow: hidden;}
+ul#storyline .slider ul li { float: left; max-width: 920px; max-height: 330px; padding: 0; margin: 0; overflow: hidden; text-align: right; background: url(../img/escheresque.png) repeat;}
+
+ul#storyline .slider ul li img.heightMax{ max-height: 330px;}
 
 ul#storyline .slider .btn, .slider .dot {
-	-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
-	-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
-	-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
-	-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
-	filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
+	-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.7));
+	-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.7));
+	-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.7));
+	-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.7));
+	filter: drop-shadow(0 1px 2px rgba(0,0,0,.7));
 }
 
 ul#storyline .slider .dots {
