@@ -1,0 +1,270 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Default styles */
+body {
+	font-family: "Helvetica", sans-serif;
+}
+
+h1 {
+	font-family:"Abel";
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 16px;
+}
+
+h2 {
+	font-family:"Abel";	
+}
+
+/* Reusable Classes */
+
+.main {
+	padding:0 10px;
+}
+
+.module {
+	background: rgba(255,255,255,0.8);
+	width:260px;
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 10px;
+	color: #58595B;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.b {
+	font-weight: bold;
+}
+
+.10space{
+	height:10px;
+	clear: both;
+	min-width: 200px;
+	position: relative;
+}
+
+
+/* Targeted Styles */
+
+#wrapper {
+	width:300px;
+	background: url(bg.jpg) no-repeat;
+	padding-top:10px;
+	overflow: hidden;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 10px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 10px rgba(50, 50, 50, 0.75);	
+	margin: 10px;
+}
+
+#head {
+	position: relative;
+	padding-bottom:10px;	
+	height: 20px;
+}
+
+#head h1 {
+	padding-top: 6px;
+	padding-left: 5px;
+}
+
+#windowActions {
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+#windowActions div{
+	display: inline;
+	opacity: 0.7;
+}
+
+#windowActions div:hover{
+	display: inline;
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+#closeBtn {
+	width: 15px;
+	height: 15px;
+	margin: 0;
+	
+}
+
+#couponList {
+	background: rgba(255,255,255,0.8);
+	width:260px;
+	margin: 10px auto;
+	padding: 5px 10px 10px 10px;
+	border-radius: 10px;
+	color: #58595B;
+}
+
+#couponList h2{
+	color: #243E63;	
+	border-bottom: #BCBEC0 2px solid ;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-weight: 14px;
+}
+
+ul#cListUL {
+	max-height: 250px;
+	overflow-y: scroll;
+	}
+
+ul#cListUL li{
+	font-size: 12px;
+	padding: 7px 0;
+	line-height: 14px;
+	border-bottom: 1px dashed #cccccc;
+}
+
+ul#cListUL li a{
+	text-decoration: none;
+	color: #58595B;
+}
+
+ul#cListUL li a:hover{
+	text-decoration: underline;
+	color: #000;
+}
+
+#couponNav {
+	color: #243E63;
+	float: right;
+	font-size: 12px;
+}
+
+#merchantInfo{
+	background: rgba(255,255,255,0.8);
+	width:260px;
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 10px;
+	color: #58595B;
+
+}
+
+
+#merchantInfo h2 {
+	color: #243E63;	
+	border-bottom: #BCBEC0 2px solid ;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-weight: 14px;
+	position: relative;
+}
+
+#mercInfoLeft {
+	width: 170px;
+	height:85px;
+	padding: 0 10px 0 0 ;
+	position: relative;
+}
+
+p.desc {
+	font-style: italic;
+	font-size: 11px; 
+	color: #58595B;
+
+	font-weight: normal;
+}
+
+
+#rateMerchant{
+	position: absolute;
+	bottom: 0;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#starRate {
+	position: relative;
+	margin-top: 2px;	
+}
+
+#starRate li{
+	float: left;
+	margin-right: 3px;
+}
+
+#mercInfoRight {
+	width: 50px;
+	height:65px;
+	padding: 10px;
+	background: #5C6F7B;
+	border-radius: 10px;
+}
+
+#mercInfoRight h3{
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom: rgba(255,255,255,0.2) 1px solid ;
+	padding-bottom: 5px;
+	color: #BAC9CC;
+}
+
+#mercInfoRight h4{
+	font-size: 35px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	color: #F8F9FA;
+}
+
+#bottom {
+	width:280px;
+	margin: 0px auto;
+	padding: 0px 0px 13px 0px;
+}
+
+#bottom ul{
+	height: 9px;
+	margin-top: -5px;
+	padding-bottom: 15px;
+}
+
+#bottom li{
+	font-size: 9px;
+	color: #58595B;
+	display: inline;
+	
+}
+
+#settingsLI:hover,  #disableLI:hover{
+	text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+	color: #000000;
+	cursor: pointer;
+
+}
+
+#leftBottomUL {
+float: left;
+width: 20%;
+}
+
+#rightBottomUL {
+float: right;
+width: 65%;
+text-align: right;
+}
+
+
+
