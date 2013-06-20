@@ -342,8 +342,14 @@
 					<div class="left-wrap">
 						<div class="slider">
 						    <ul>
-						        <li class="slide"><img class="heightMax slide" src="img/assets/v1_bho_v1.jpg" alt="v0_bho_1" /></li>
-						        <li class="slide"><img class="slide" src="img/assets/v1_bho_v2.jpg" alt="v0_bho_1" /></li>
+						    	<li class="slide"><img src="img/assets/01_aboutBHO.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_aboutRewards.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_homepage-navHover2.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_legal.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_merchantDetail-1.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_merchantDetail-2.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_register.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_userAccount.jpg" alt="01_aboutBHO" /></li>
 						    </ul>
 						</div>
 					</div>
@@ -351,11 +357,12 @@
 				<div class="right-story">					
 						<h2 class="title">Wireframes</h2>
 						<h3 class="type"><b>WEB</b> / v1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum.</p>
+						<p>At this point we had developed these wireframes to lead development for the project</p>
 						<p class="icon"><img src="img/icons/Wireframe.png"/></p>
 				</div>
 			</li> <!-- END story-item -->
-			<li class="story-item mock bho"> <!-- START story-item -->
+			
+			<li class="story-item wire web"> <!-- START story-item -->
 				<div class="left-story">
 					<div class="left-wrap">
 						<div class="slider">
@@ -367,10 +374,28 @@
 					</div>
 				</div>
 				<div class="right-story">					
-						<h2 class="title">Mockups</h2>
+						<h2 class="title">Wireframes: Structure and Sizing Guildelines</h2>
 						<h3 class="type"><b>WEB</b> / v1</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum.</p>
 						<p class="icon"><img src="img/icons/Mock.png"/></p>
+				</div>
+			</li> <!-- END story-item -->
+			
+			<li class="story-item wire web"> <!-- START story-item -->
+				<div class="left-story">
+					<div class="left-wrap">
+						<div class="slider">
+						    <ul>
+						        <li class="slide"><img class="slide" src="img/assets/v1_rewards_merchant.jpg" alt="v0_bho_1" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/v1_rewards_home.jpg" alt="v0_bho_1" /></li>
+						    </ul>
+						</div>
+					</div>
+				</div>
+				<div class="right-story">					
+						<h2 class="title">Wireframes: Typography Guildelines</h2>
+						<h3 class="type"><b>WEB</b> / v1</h3>
+						<p>Rewards website wireframes with type guidelines displayed</p>
 				</div>
 			</li> <!-- END story-item -->
 			
@@ -383,9 +408,29 @@
 					<div class="left-wrap">
 						<div class="slider">
 						    <ul>
-						        <li class="slide"><img class="slide" src="img/assets/v2_rewards_home.jpg" /></li>
-						        <li class="slide"><img class="slide" src="img/assets/v2_rewards_merchant.jpg" /></li>
-						        <li class="slide"><img class="slide" src="img/assets/v2_rewards_search.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/type_Guidelines-1.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/type_Guidelines-2.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/type_Guidelines-3.jpg" /></li>
+						        
+						    </ul>
+						</div>
+					</div>
+				</div>
+				<div class="right-story">					
+						<h2 class="title">Visual Mockups</h2>
+						<h3 class="type"><b>WEB</b> / v2</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum.</p>
+				</div>
+			</li> <!-- END story-item -->
+			
+			<li class="story-item mock web"> <!-- START story-item -->
+				<div class="left-story">
+					<div class="left-wrap">
+						<div class="slider">
+						    <ul>
+						        <li class="slide"><img class="slide" src="img/assets/type_Guidelines-1.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/type_Guidelines-2.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/type_Guidelines-3.jpg" /></li>
 						        
 						    </ul>
 						</div>
@@ -515,9 +560,13 @@ $(function () {
     $('#filterclose').click(teamClose);
     $('#white-overlay').click(filterClose);
     $('#white-overlay').click(teamClose);
-    $("img").unveil(1000);
     
     $('.slider').unslider({
+    
+});
+
+$(window).bind("load", function() {
+   $('.slider').unslider({
     	speed: 500,               //  The speed to animate each slide (in milliseconds)
 		delay: 3000000,              //  The delay between slide animations (in milliseconds)
 		pause: true,    		  // pause on hover (boolean)
@@ -526,8 +575,6 @@ $(function () {
 		dots: true,               //  Display dot navigation
 		fluid: false              //  Support responsive design. May break non-responsive designs
     }); //UNSLIDER
-    $("img").not('.slide').unveil(1000);
-    
 });
 
 var filtered = 0; //0 is none, 1+ is filtered
