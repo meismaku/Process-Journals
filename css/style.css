@@ -122,6 +122,7 @@ h4 {
 
 #about {
 	right: 100px;
+	z-index: 100000;
 }
 
 #about:hover, #filters:hover{
@@ -144,7 +145,7 @@ h4 {
 	color: rgb(57,57,57);
 }
 
-#filterclose {
+#overlayclose {
 	position: absolute;
 	top: 15px;
 	padding: 5px 10px;
@@ -153,8 +154,9 @@ h4 {
 	z-index: 100000;
 	display: none;
 	opacity: 0;
-	right: 95px;
+	right: 195px;
 	color: rgb(57,57,57);
+	font-weight: 100;
 }
 
 #aboutclose {
@@ -172,7 +174,7 @@ h4 {
 
 /* filter and overlay */ 
 
-#sidebar {
+#filterCont {
 	position: fixed;
 	top: 60px;
 	width: 185px;
@@ -241,6 +243,7 @@ h4 {
 	border-left: 1px solid #dfdfdf;
 	border-right: 1px solid #dfdfdf;
 	border-bottom: 1px solid #dfdfdf;
+	opacity: 0;
 	z-index: 99999;
 	box-shadow:   3px 3px 2px 1px rgba(209,209,209,0.20);
 }
