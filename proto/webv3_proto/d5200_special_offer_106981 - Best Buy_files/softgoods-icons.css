@@ -1,0 +1,132 @@
+/* UI BUILD: Thursday, May 16 2013 at  1:15:23 PM -- BUILD ID: BRANCH_NAME: release VERSION: 13.09.93 */
+/* MD5: 046401268c87b05ec1121950e49cf959 */
+
+/*Product Icons rev. 2012.02.08.1311 */
+#productsummary .product-icons {
+	border-top:1px solid #e7e7e7;
+}
+.product-icons {
+	padding-top:10px;
+	margin-bottom:10px;
+	zoom:1;
+}
+.product-icons:before,
+.product-icons:after {
+    content:"";
+    display:table;
+}
+.product-icons:after {
+    clear:both;
+}
+
+.product-icon, .icon-container {
+	float:left;
+	overflow:hidden;
+}
+
+.product-icon {
+	width:45px;
+	height:50px;
+	margin-left:5px;
+}
+
+.icon-container {
+	height: 50px;
+	width:45px;
+}
+.product-icon a {
+	display:block;
+	width:100%;
+	height:100%;
+	padding-left:1000px;
+}
+
+.product-icon {
+  background:url(../images/icons/softgoods-icons.png);
+}
+
+/* Wide icons */
+.product-icon.digital-addons, .product-icon.connected-devices, .product-icon.digital-episodes {
+	width: 100px;
+}
+
+/* Icon position */
+.connected-devices { background-position: 0px -50px; }
+.digital-addons { background-position: 0px -150px; }
+.digital-episodes { background-position: 0px -100px; }
+
+.icon-esrbrating-rp { background-position: -100px 0; }
+.icon-esrbrating-ao { background-position: -100px -50px; }
+.icon-esrbrating-m { background-position: -100px -100px; }
+.icon-esrbrating-t { background-position: -100px -150px; }
+.icon-esrbrating-e10plus { background-position: -100px -200px; }
+.icon-esrbrating-e { background-position: -100px -250px; }
+.icon-esrbrating-ec { background-position: -100px -300px; }
+
+.icon-numberofplayers-singleplayer { background-position: -145px -0px; }
+.icon-coop-yes { background-position: -145px -50px; }
+.icon-numberofplayers-multiplayer { background-position: -145px -100px; }
+.icon-resolution-3dgaming { background-position: -145px -150px; }
+.icon-gameaddon { background-position: -145px -200px; }
+.icon-cooponlineplayers-yes { background-position: -145px -250px; }
+.icon-coopofflineplayers-yes { background-position: -145px -300px; }
+.icon-numberofplayers-1player { background-position: -145px -350px; }
+.icon-numberofplayers-1-2players { background-position: -145px -400px; }
+.icon-numberofplayers-1-3plusplayers { background-position: -145px -450px; }
+
+.icon-xbox-kinect-kinect-enabled { background-position: -190px -0px; }
+.icon-xbox-kinect-kinect-required { background-position: -190px -50px; }
+.icon-playstation-move-move-enabled { background-position: -190px -100px; }
+.icon-playstation-move-move-required { background-position: -190px -150px; }
+.icon-wii-motion-plus-wii-motionplus-enabled { background-position: -190px -200px; }
+.icon-wii-motion-plus-wii-motionplus-required { background-position: -190px -250px; }
+
+.icon-mpaarating-g { background-position: -235px 0; }
+.icon-mpaarating-pg { background-position: -235px -50px; }
+.icon-mpaarating-pg13 { background-position: -235px -100px; }
+.icon-mpaarating-r { background-position: -235px -150px; }
+.icon-mpaarating-nc-17 { background-position: -235px -200px; }
+.icon-mpaarating-nr { background-position: -235px -250px; }
+.icon-mpaarating-ns { background-position: -235px -300px; }
+.icon-mpaa-rating-g { background-position: -235px 0; }
+.icon-mpaa-rating-pg { background-position: -235px -50px; }
+.icon-mpaa-rating-pg13 { background-position: -235px -100px; }
+.icon-mpaa-rating-r { background-position: -235px -150px; }
+.icon-mpaa-rating-nc-17 { background-position: -235px -200px; }
+.icon-mpaa-rating-nr { background-position: -235px -250px; }
+.icon-mpaa-rating-ns { background-position: -235px -300px; }
+
+.icon-tvrating-tvy { background-position: -280px -0px; }
+.icon-tvrating-tvy7 { background-position: -280px -50px; }
+.icon-tvrating-tvy7fv { background-position: -280px -100px; }
+.icon-tvrating-tvg { background-position: -280px -150px; }
+.icon-tvrating-tvpg { background-position: -280px -200px; }
+.icon-tvrating-tv14 { background-position: -280px -250px; }
+.icon-tvrating-tvma { background-position: -280px -300px; }
+
+.icon-rental-24hours { background-position: -325px -0px; }
+.icon-rental-48hours { background-position: -325px -50px; }
+.icon-resolution-hddigital { background-position: -325px -100px; }
+.icon-resolution-3dvideo { background-position: -325px -150px; }
+.icon-offlinedolbydigital-yes { background-position: -325px -200px; }
+.icon-audio-capabilities-dts { background-position: -325px -250px; }
+
+.icon-mobile { background-position: -370px 0px; }
+.icon-xbox { background-position: -370px -50px; }
+.icon-ps3 { background-position: -370px -100px; }
+.icon-dvd { background-position: -370px -150px; }
+.icon-bluray { background-position: -370px -200px; }
+.icon-smarttv { background-position: -370px -250px; }
+.icon-pconly { background-position: -370px -300px; }
+.icon-pcmac { background-position: -370px -350px; }
+
+/* Tooltip styles */
+
+.help-tip {
+  display: none;
+  max-width:200px;
+}
+
+.tooltip-header {
+  font-weight:bold;
+}

@@ -1,0 +1,933 @@
+../../../../../YahooMessenger_Round01/style.css/*
+JakyungKim (jakyungdesign@gmail.com) (http://www.jakyungdesign.com) 
+ *
+ * AVG Rewards BHO
+ * Version: 1.0
+ * Date: 11/06/12  
+ *
+*/
+
+@font-face {
+	font-family: 'DINPro';
+	src: url('../font/dinpro.eot');
+	src: url('../font/dinpro.eot?#iefix') format('embedded-opentype'),
+		 url('../font/dinpro.woff') format('woff'),
+		 url('../font/dinpro.ttf') format('truetype'),
+		 url('../font/dinpro.svg#dinpro') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	overflow: auto;
+}
+
+body {
+	width: 300px;
+	height: 470px;
+	position: fixed;
+	bottom: -10px;
+	right: -10px;
+}
+
+#wrap {
+	width: 280px;
+	height: 450px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	font-family:'DINPro';
+    /*overflow-y: scroll;
+    overflow-x: hidden;*/
+    
+    -webkit-box-shadow: 0px 0px 13px 1px #707070;
+    -moz-box-shadow: 0px 0px 13px 1px #707070;
+    -o-box-shadow: 0px 0px 13px 1px #707070;
+    box-shadow: 0px 0px 13px 1px #707070;
+    
+}
+
+#score {
+	width: 20px; 
+	font-size: 16px;
+	-webkit-box-shadow: 1px 1px 10px 1px #333;
+}
+
+
+a, a:hover, a:active, a:visited {
+	border: none;
+}
+
+a img {
+	border: none;
+}
+
+/* ================= Header Start ===================*/
+
+div#header {
+	width: 280px;
+	height: 36px;
+	background-color: #5FA4E4;	
+	box-shadow: 0px 5px #000000;
+	/*box-shadow: 0 4px 2px -2px gray;*/
+	background-image: url(../images/header-bg.png);
+}
+
+div#header h1 {
+	font-size: 20px;
+	font-weight: 400;
+	color: #FFF;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 0px 0px 10px;;
+	position: absolute;
+	left: 3px;
+	top: 0px;
+	text-shadow: 0px 2px 1px rgba(50, 50, 50, 0.5);
+}
+
+div#header h1 strong{
+	font-weight: 300;
+}
+
+div#header h2 {
+	font-size: 20px;
+	font-weight: 400;
+	color: #FFF;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 0px 0px 10px;
+	position: absolute;
+	left: 24px;
+	top: 0px;
+	text-shadow: 0px 2px 1px rgba(50, 50, 50, 0.5);
+}
+
+div#back {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 9px;
+	top: 8px;
+	background-image: url(../images/back-normal.png);
+	cursor: pointer;
+}
+
+div#back:hover {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 9px;
+	top: 8px;
+	background-image: url(../images/back-hover.png);
+}
+
+div#close {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	right: 15px;
+	top: 0px;
+	background-image: url(../images/close-normal.png);
+	cursor: pointer;
+}
+
+div#close:hover {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	right: 15px;
+	top: 0px;
+	background-image: url(../images/close-hover.png);
+}
+
+div#close:active {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	right: 15px;
+	top: 0px;
+	background-image: url(../images/close-active.png);
+}
+
+/* ================= Header End ===================*/
+
+/* ================= List Start ===================*/
+
+div#list{
+	width: 276px;
+	height: 378px;
+	position: absolute;
+	left: 0px;
+	top: 36px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: #EEE;
+	padding: 3px 0px 5px 4px;
+	background-image: url(../images/body-texture.png);
+}
+
+div#shadow-bottom img {
+	position: absolute;
+	bottom: 36px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 999;
+}
+
+div.box {
+	width: 260px;
+	height: auto;
+	color: #565656;
+	background-color: #fbfbfb;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px #707070;
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+
+div.box.hover-stage {
+	background-image: url(../images/box-hover1.png);
+	background-position: right;
+	background-color: #FFF;
+}
+
+
+div.box.active-stage {
+	width: 260px;
+	height: auto;
+	color: #FFF;
+	background-image: url(../images/loading.gif);
+	background-position: 240px center;
+	background-repeat: no-repeat;
+	background-color: #6CB0F0;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px #707070;
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+	cursor: pointer;
+	text-shadow: 0px 1px 1px rgba(10, 10, 10, 0.9);
+}
+
+div.box:nth-child(1){
+	width: 260px;
+	height: auto;
+	background-color: #fdfdfd;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px #707070;
+	margin: 2px 0px 0px 0px;
+	padding: 0px;
+}
+
+div.box:nth-last-child(1){
+	width: 260px;
+	height: auto;
+	background-color: #fdfdfd;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px #707070;
+	margin: 5px 0px 2px 0px;
+	padding: 0px;
+}
+
+p{
+	width: 230px;
+	height: auto;
+	font-size:11px;
+	font-weight: 400;
+	line-height: 16px;
+	margin: 0px 8px;
+	padding: 10px 0px;
+	text-align: left;
+}
+
+p a {
+	text-decoration: none;
+	color: #565656;
+}
+
+.scroll-pane {
+	outline: 0 none;
+}
+
+/* ================= List End ===================*/
+/* ================= List-Initial Stage Start ===================*/
+
+div.initial {
+	width: 280px;
+	height: 378px;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	left: 0px;
+	top: 36px;
+	z-index: 999;
+}
+
+div.initial-box {
+	width: 230px;
+	height: 123px;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 4px;
+	position: absolute;
+	top: 35px;
+	left: 25px;
+}
+
+div.initial-box h1 {
+	font-size: 11px;
+	font-weight: 600;
+	text-align: center;
+	color: #565656;
+	padding: 20px 0px 7px 0px;
+	margin: 0;
+}
+
+div.initial-box p {
+	font-size: 11px;
+	font-weight: 300;
+	text-align: center;
+	color: #565656;
+	padding: 0;
+	margin: 0;
+}
+
+div.continue {
+	width: 201px;
+	height: 31px;
+	position: absolute;
+	left: 15px;
+	top: 75px;
+	background-image: url(../images/continue-normal.png);
+	cursor: pointer;
+}
+
+div.continue:hover {
+	width: 201px;
+	height: 31px;
+	position: absolute;
+	left: 15px;
+	top: 75px;
+	background-image: url(../images/continue-active.png);
+	cursor: pointer;
+}
+
+div.continue:active {
+	width: 201px;
+	height: 31px;
+	position: absolute;
+	left: 15px;
+	top: 75px;
+	background-image: url(../images/continue-active.png);
+	cursor: pointer;
+}
+
+/* ================= List-Initial Stage End ===================*/
+/* ================= List-Disable Stage Start ===================*/
+
+div.disable-stage {
+	width: 280px;
+	height: 378px;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	left: 0px;
+	top: 36px;
+	z-index: 999;
+}
+
+div.disable-box {
+	width: 230px;
+	height: 123px;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 4px;
+	position: absolute;
+	top: 35px;
+	left: 25px;
+}
+
+div.disable-box p {
+	font-size: 11px;
+	font-weight: 300;
+	text-align: center;
+	color: #565656;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 25px;
+}
+
+div.re-enable {
+	width: 201px;
+	height: 31px;
+	position: absolute;
+	left: 15px;
+	top: 75px;
+	background-image: url(../images/re-enable-normal.png);
+	cursor: pointer;
+}
+
+div.re-enable:hover {
+	width: 201px;
+	height: 31px;
+	position: absolute;
+	left: 15px;
+	top: 75px;
+	background-image: url(../images/re-enable-active.png);
+	cursor: pointer;
+}
+
+div.re-enable:active {
+	width: 201px;
+	height: 31px;
+	position: absolute;
+	left: 15px;
+	top: 75px;
+	background-image: url(../images/re-enable-active.png);
+	cursor: pointer;
+}
+
+/* ================= List-Disable Stage End ===================*/
+/* ================= List-No Deal Start ===================*/
+
+div#list-noscroll{
+	width: 276px;
+	height: 378px;
+	position: absolute;
+	left: 0px;
+	top: 36px;
+	overflow: hidden;
+	background: #EEE;
+	padding: 3px 0px 5px 4px;
+	background-image: url(../images/body-texture.png);
+}
+
+div#list-noscroll h2 {
+	width: 210px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	color: #666;
+	position: absolute;
+	top: 140px;
+	left: 33px;
+}
+
+div#list-noscroll h2 a{
+	text-decoration: underline;
+	color: #444;
+}
+
+/* ================= List-No Deal End ===================*/
+/* ================= List-See More Start ===================*/
+
+div.seemore {
+	width: 260px;
+	height: auto;
+	color: #565656;
+	background-color: #fbfbfb;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px #707070;
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+
+div.seemore h4 {
+	width: 230px;
+	height: auto;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 16px;
+	margin: 0px 8px;
+	padding: 10px 0px;
+	text-align: center;
+}
+
+h4 a {
+	text-decoration: none;
+	color: #565656;
+}
+
+div.ghost {
+	width: 260px;
+	height: 65px;
+}
+
+/* ================= List-See More End ===================*/
+
+/* ================= Setting Start ===================*/
+
+div#setting {
+	position: absolute;
+	left: 0px;
+	top: 36px;
+	width: 276px;
+	height: 378px;
+	clear: both;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background: #EEE;
+	padding: 0px 0px 0px 4px;
+	background-image: url(../images/body-texture.png);
+}
+
+div#shadow-top img {
+	position: absolute;
+	top: 36px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 999;
+}
+
+div#disable {
+	width: 280px;
+	height: 123px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-image: url(../images/divider.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+div#disable h3 {
+	width: 250px;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	color: #565656;
+	position: absolute;
+	left: 15px;
+	top: 20px;
+}
+
+/* RADIO START */
+
+ul#radio-buttons{
+	width: 280px;
+	float: left;
+	position: absolute;
+	left: 25px;
+	top: 60px;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul#radio-buttons li {
+	font-size: 13px;
+	color: #565656;
+	float: left;
+	list-style-type: none;
+	margin: 0px 13px 0px 0px;
+	padding: 0px;
+}
+
+.regular-radio {
+	display: none;
+}
+
+.regular-radio + label {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 6px;
+	border-radius: 50px;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+
+.regular-radio:checked + label:after {
+	content: ' ';
+	width: 6px;
+	height: 6px;
+	border-radius: 50px;
+	position: absolute;
+	top: 3px;
+	background: #77B8F2;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+	text-shadow: 0px;
+	left: 3px;
+	font-size: 32px;
+}
+
+.regular-radio:checked + label {
+	background-color: #e9ecee;
+	color: #99a1a7;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.regular-radio + label:active, .regular-radio:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+/*
+.regular-radio:checked + label:after:active {
+	background-color: #65ACED;
+}
+*/
+
+.big-radio + label {
+	padding: 16px;
+}
+
+.big-radio:checked + label:after {
+	width: 24px;
+	height: 24px;
+	left: 4px;
+	top: 4px;
+}
+
+/* RADIO END */
+
+div#opacity {
+	width: 280px;
+	height: 130px;
+	position: absolute;
+	left: 0px;
+	top: 124px;
+	background-image: url(../images/divider.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+div#opacity label {
+	width: 250px;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 15px;
+	top: 10px;
+	color: #565656;
+}
+
+div#opacity-numbers {
+	width: 280px;
+	height: 20px;
+	position: absolute;
+	top: 70px;
+	left: 0;
+}
+
+p#left {
+	color: #565656;
+	text-align: left;
+	position: absolute;
+	top: 0px;
+	left: 10px;
+}
+
+p#right {
+	color: #565656;
+	text-align: right;
+	position: absolute;
+	top: 0px;
+	right: 13px;
+}
+
+div#register {
+	width: 280px;
+	height: 120px;
+	position: absolute;
+	left: 0px;
+	top: 255px;
+}
+
+div#register h3 {
+	width: 250px;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	color: #565656;
+}
+
+div#register-button {
+	width: 201px;
+	height: 31px;
+	position: absolute;
+	left: 40px;
+	top: 63px;
+	background-image: url(../images/register-normal.png);
+	cursor: pointer;
+}
+
+div#register-button:hover {
+	width: 201px;
+	height: 31px;
+	position: absolute;
+	left: 40px;
+	top: 63px;
+	background-image: url(../images/register-active.png);
+}
+
+div#register-button:active {
+	width: 201px;
+	height: 31px;
+	position: absolute;
+	left: 40px;
+	top: 63px;
+	background-image: url(../images/register-active.png);
+}
+
+div#registered {
+	width: 280px;
+	height: 120px;
+	position: absolute;
+	left: 0px;
+	top: 265px;
+}
+
+div#registered h3 {
+	width: 280px;
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 600;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0px;
+	top: 10px;
+	color: #666;
+}
+
+/* ================= Setting End ===================*/
+
+/* ================= About Start ===================*/
+
+div#about {
+	position: absolute;
+	left: 0px;
+	top: 36px;
+	width: 276px;
+	height: 378px;
+	clear: both;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background: #EEE;
+	padding: 0px 0px 0px 4px;
+	background-image: url(../images/body-texture.png);
+}
+
+div#about h3 {
+	width: 250px;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 10px;
+	top: 175px;
+	color: #565656;
+}
+
+div#about-logo {
+	width: 200px;
+	height: 44px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	background-image: url(../images/about-logo.png);
+}
+
+div#about p {
+	width: 250px;
+	font-size: 11px;
+	line-height: 20px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 12px;
+	top: 68px;
+	color: #565656;
+}
+
+div#about ul {
+	width: 261px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 10px;
+	top: 210px;
+}
+
+div#about ul li {
+	font-size: 11px;
+	font-weight: 300;
+	line-height: 20px;
+	list-style: none;
+	margin: 0px 0px 10px 0px;
+	padding: 0;
+	color: #565656;
+}
+
+div#about ul li img {
+	width: 6px;
+	height: 6px;
+	margin: 0px 2px 0px 0px;
+}
+
+div#more {
+	width: 201px;
+	height: 31px;
+	position: absolute;
+	left: 40px;
+	top: 318px;
+	cursor: pointer;
+	background-image: url(../images/more-normal.png);
+}
+
+div#more:hover {
+	width: 201px;
+	height: 31px;
+	position: absolute;
+	left: 40px;
+	top: 318px;
+	cursor: pointer;
+	background-image: url(../images/more-active.png);
+}
+
+div#more:active {
+	width: 201px;
+	height: 31px;
+	position: absolute;
+	left: 40px;
+	top: 318px;
+	background-image: url(../images/more-active.png);
+}
+
+/* ================= About End ===================*/
+
+/* ================= Navigation Start ===================*/
+
+div#footer {
+	width: 280px;
+	height: 36px;
+	position: absolute;
+	bottom: 0;
+}
+
+div#nav-list {
+	width: 53px;
+	height: 36px;
+	float: left;
+	background-image: url(../images/list-normal.png);
+}
+
+div#nav-list:hover {
+	width: 53px;
+	height: 36px;
+	float: left;
+	background-image: url(../images/list-hover.png);
+}
+
+div#nav-list:active {
+	width: 53px;
+	height: 36px;
+	float: left;
+	background-image: url(../images/list-active.png);
+}
+
+div#nav-setting {
+	width: 53px;
+	height: 36px;
+	float: left;
+	background-image: url(../images/setting-normal.png);
+}
+
+div#nav-setting:hover {
+	width: 53px;
+	height: 36px;
+	float: left;
+	background-image: url(../images/setting-hover.png);
+}
+
+div#nav-setting:active {
+	width: 53px;
+	height: 36px;
+	float: left;
+	background-image: url(../images/setting-active.png);
+}
+
+div#nav-about {
+	width: 53px;
+	height: 36px;
+	float: left;
+	background-image: url(../images/about-normal.png);
+}
+
+div#nav-about:hover {
+	width: 53px;
+	height: 36px;
+	float: left;
+	background-image: url(../images/about-hover.png);
+}
+
+div#nav-about:active {
+	width: 53px;
+	height: 36px;
+	float: left;
+	background-image: url(../images/about-active.png);
+}
+
+a.list-current {
+	width: 53px;
+	height: 36px;
+	float: left;
+	background-image: url(../images/list-active.png);
+}
+
+a.setting-current {
+	width: 53px;
+	height: 36px;
+	float: left;
+	background-image: url(../images/setting-active.png);
+}
+
+a.about-current {
+	width: 53px;
+	height: 36px;
+	float: left;
+	background-image: url(../images/about-active.png);
+}
+
+div#nav-logo {
+	width: 121px;
+	height: 36px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/logo-normal.png);
+} 
+
+div#nav-logo:hover {
+	width: 121px;
+	height: 36px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/logo-hover.png);
+} 
+
+/* ================= Navigation End ===================*/
+
+
+
+
+
+
+
+
+
+
+
+
+

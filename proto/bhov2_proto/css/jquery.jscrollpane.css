@@ -1,0 +1,68 @@
+.jspContainer{ overflow: hidden; position: relative;}
+
+.jspPane { position: absolute;}
+
+.jspCap{ display: none; opacity: 0; }
+
+.jspCap{ display: block; }
+
+.jspVerticalBar .jspCap{ height: 7px; margin-top: -2px;}
+
+/* =================  Bar wrap =======*/
+
+.jspVerticalBar {
+	position: absolute;
+	top: 0;
+	right: 2px;
+	width: 8px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	 border-radius: 10px;
+}
+
+
+/*===============  bg  ==================  */ 
+.jspTrack {	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	 border-radius: 10px;
+
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	-moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	-o-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	-ms-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+	
+    background-color: rgba(180,180,180,0.7);
+}
+
+
+
+/* ================ Dragable peice ============== */ 
+
+.jspDrag {
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	 border-radius: 10px;
+	 
+    background-color: #f8f8f8;
+    border: 1px solid #bdbdbd;
+}
+
+
+
