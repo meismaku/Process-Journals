@@ -563,8 +563,13 @@ $(function () {
 		if( isSidebarOpen == 0 ){ // not open
     		$('#filterCont').animate({right:'0'});
     		$('#white-overlay').css({display:'block'});
+    		
+    		// top section 
     		$('#filters').addClass('on');
     		$('#about').addClass('on');
+    		$('#top').addClass('white');
+    		
+    		
     		$('#overlayclose').css({display:'block'}).animate({opacity:1},300);
     		isSidebarOpen = 1;
     	} else if( isSidebarOpen == 1 ){ // is open
@@ -582,8 +587,12 @@ $(function () {
 		if( isSidebarOpen  == 0 ){ // not open
     		$('#team-wrap').css({display:'block'}).animate({opacity:'1'});
     		$('#white-overlay').css({display:'block'});
-    		$('#about').addClass('on');
+    		
+    		// top section 
     		$('#filters').addClass('on');
+    		$('#about').addClass('on');
+    		$('#top').addClass('white');
+    		
     		$('#overlayclose').css({display:'block'}).animate({opacity:1},300);
     		$('#aboutclose').css({display:'block'}).animate({opacity:1},200);
     		isSidebarOpen = 1;
@@ -614,6 +623,7 @@ $(function () {
 		// turn off button 'on' states
     	$('#filters').removeClass('on');
     	$('#about').removeClass('on');
+    	$('#top').removeClass('white');
     	
     	//hide overlay button
     	$('#overlayclose').animate({opacity:0}).css({display:'none'});
