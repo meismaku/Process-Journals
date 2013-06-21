@@ -10,7 +10,8 @@
 </head>
 <body>
 <div id="cont">
-	<div id="top"><div id="white-overlay"></div> <!-- overlay -->
+<div id="white-overlay"></div> <!-- overlay -->
+	<div id="top" class="fadeInDown">
 		<div id="logo">
 			<img src="img/avglogo.svg" width="90px" height="" />
 		</div><!-- end logo -->  
@@ -461,7 +462,7 @@ $(function () {
 			});
 	    	$('#filters').removeClass('on');
 	    	$('#filterclose').animate({opacity:0}).css({display:'none'});
-	    	$('#team').animate({right:'-85%'});
+	    
 	    	$('#about').removeClass('on');
 	    	$('#aboutclose').animate({opacity:0}).css({display:'none'});
     		isSidebarOpen = 0;
@@ -478,11 +479,10 @@ $(function () {
     	$('#filterclose').animate({opacity:0}).css({display:'none'});
 		isSidebarOpen = 0;
     };
-
     
 	$('#about').click(function(){
 		if( isSidebarOpen  == 0 ){
-    		$('#team-wrap').animate({right:'0'});
+    		$('#team-wrap').animate({right:'8%'});
     		$('#white-overlay').css({display:'block'});
     		$('#about').addClass('on');
     		$('#aboutclose').css({display:'block'}).animate({opacity:1},200);
@@ -509,12 +509,10 @@ $(function () {
     	$('#aboutclose').animate({opacity:0}).css({display:'none'});
 		isSidebarOpen = 0;
     };
-
-    
-    
-
+ 
     $('#aboutclose').click(teamClose);
     $('#filterclose').click(filterClose);
+    $('#filterclose').click(teamClose);
     $('#white-overlay').click(filterClose);
     $('#white-overlay').click(teamClose);
     $("img").unveil(1000);
