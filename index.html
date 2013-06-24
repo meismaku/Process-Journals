@@ -13,7 +13,8 @@
 <div id="white-overlay"></div> <!-- overlay -->
 	<div id="top" class="fadeInDown">
 		<div id="logo">
-			<img src="img/avglogo.svg" width="90px" height="" />
+			<img id="whiteLogo" src="img/avgux-white.svg" width="90px" height="" />
+			<img id="blackLogo" src="img/avgux-black.svg" width="90px" height="" />
 		</div><!-- end logo -->  
 		<div id="about">The Team</div>
 		<div id="filters">Filters</div>
@@ -51,6 +52,7 @@
 				<div class="left">
 					<img src="img/team/mark.png" alt="Mark Bumanglag">	
 				</div><!-- end team left wrap --> 
+
 				<div class=" left">
 					<h1 class="">Mark Bumanglag</h1>
 					<h2 class="">User Experience Web Designer</h2>
@@ -96,6 +98,24 @@
 			<div class="team-right-wrap">
 				<a href="http://www.jakyungdesign.com/" target="_blank" class="team-btn">Portfolio</a>
 				<a href="http://2nerd.com/wp-content/uploads/2013/04/Cat-Resume.jpg" target="_blank" class="team-btn">Resume</a>
+			</div><!-- end team right -->
+		</div><!-- end team item --> 
+		
+		<div class="team-item">
+			<div class="team-left-wrap">
+				<div class="left">
+					<img src="img/team/rachel.png" alt="Rachel Schmitz">	
+				</div><!-- end team left wrap --> 
+				<div class=" left">
+					<h1 class="">Rachel Schmitz</h1>
+					<h2 class="">User Experience Web Designer</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum aliquam leo ut consectetur. Sed adipiscing justo quis diam tincidunt, at lacinia dolor suscipit. Duis mattis nibh metus. In in mauris turpis. Phasellus sed arcu gravida, venenatis odio sed, sollicitudin turpis. Donec vel libero quam.</p>
+
+				</div><!-- end right -->
+			</div><!-- end team left -->
+			<div class="team-right-wrap">
+				<a href="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/6/19/12/enhanced-buzz-15171-1371660524-29.jpg" target="_blank" class="team-btn">Portfolio</a>
+				<a href="http://s3-ec.buzzfed.com/static/enhanced/webdr01/2013/6/19/13/enhanced-buzz-2672-1371662106-2.jpg" target="_blank" class="team-btn">Resume</a>
 			</div><!-- end team right -->
 		</div><!-- end team item --> 
 		
@@ -568,7 +588,11 @@ $(function () {
     		$('#filters').addClass('on');
     		$('#about').addClass('on');
     		$('#top').addClass('white');
-    		
+    		$('#blackLogo').css({display:'block'}).animate({opacity:1},300);
+       		$('#whiteLogo').animate({opacity:'0'}).delay(300).queue( function(next){ 
+				$(this).css('display','none'); 
+				next(); 
+			});
     		
     		$('#overlayclose').css({display:'block'}).animate({opacity:1},300);
     		isSidebarOpen = 1;
@@ -592,6 +616,11 @@ $(function () {
     		$('#filters').addClass('on');
     		$('#about').addClass('on');
     		$('#top').addClass('white');
+    		$('#blackLogo').css({display:'block'}).animate({opacity:1},300);
+       		$('#whiteLogo').animate({opacity:'0'}).delay(300).queue( function(next){ 
+				$(this).css('display','none'); 
+				next(); 
+			});
     		
     		$('#overlayclose').css({display:'block'}).animate({opacity:1},300);
     		$('#aboutclose').css({display:'block'}).animate({opacity:1},200);
@@ -624,6 +653,11 @@ $(function () {
     	$('#filters').removeClass('on');
     	$('#about').removeClass('on');
     	$('#top').removeClass('white');
+    	$('#whiteLogo').css({display:'block'}).animate({opacity:1},300);
+   		$('#blackLogo').animate({opacity:'0'}).delay(300).queue( function(next){ 
+			$(this).css('display','none'); 
+			next(); 
+		});
     	
     	//hide overlay button
     	$('#overlayclose').animate({opacity:0}).css({display:'none'});
