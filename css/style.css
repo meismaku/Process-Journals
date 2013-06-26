@@ -31,79 +31,28 @@ h4 {
 	height: 70px;
 	background: rgba(120,201,112,0.9);
 	color: white;
-	z-index: 99999;
+	z-index: 9999999;
 }
 
-@-webkit-keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateY(-20px);
-	}
-	
-	100% {
-		opacity: 1;
-		-webkit-transform: translateY(0);
-	}
+#top.white {
+	background: rgba(255,255,255,0.60);
 }
-
-@-moz-keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-moz-transform: translateY(-20px);
-	}
-	
-	100% {
-		opacity: 1;
-		-moz-transform: translateY(0);
-	}
-}
-
-@-o-keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-o-transform: translateY(-20px);
-	}
-	
-	100% {
-		opacity: 1;
-		-o-transform: translateY(0);
-	}
-}
-
-@keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		transform: translateY(-20px);
-	}
-	
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-.fadeInDown {
-	-webkit-animation-duration: 0.5s;
-	-moz-animation-duration: 0.5s;
-	-o-animation-duration: 0.5s;
-	animation-duration: 0.5s;
-	-webkit-animation-delay: 1s;
-	-moz-animation-delay: 1s;
-	-o-animation-delay: 1s;
-	animation-delay: 1s;
-	-webkit-animation-fill-mode: both;
-	-moz-animation-fill-mode: both;
-	-o-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-name: fadeInDown;
-	-moz-animation-name: fadeInDown;
-	-o-animation-name: fadeInDown;
-	animation-name: fadeInDown;
-}
-
 
 #logo {
 	margin: 25px 40px;
+	
+}
+
+#logo img#whiteLogo{
+	display: block;
+	opacity: 1;
+	position: absolute;
+}
+
+#logo img#blackLogo{
+	display: none;
+	opacity: 0;
+	position: absolute;
 }
 
 #about, #filters {
@@ -122,6 +71,7 @@ h4 {
 
 #about {
 	right: 100px;
+	z-index: 100000;
 }
 
 #about:hover, #filters:hover{
@@ -144,7 +94,12 @@ h4 {
 	color: rgb(57,57,57);
 }
 
-#filterclose {
+#about.on:hover, #filters.on:hover{
+	background: rgb(255,255,255);
+	color: rgb(57,57,57);
+}
+
+#overlayclose {
 	position: absolute;
 	top: 15px;
 	padding: 5px 10px;
@@ -153,8 +108,9 @@ h4 {
 	z-index: 100000;
 	display: none;
 	opacity: 0;
-	right: 95px;
+	right: 195px;
 	color: rgb(57,57,57);
+	font-weight: 100;
 }
 
 #aboutclose {
@@ -170,9 +126,21 @@ h4 {
 	color: rgb(57,57,57);
 }
 
+/* nda section */
+
+#overview p { 
+	margin: 20px 40px;
+	width: 490px;
+	background: rgba(0,0,0,0.5);
+	padding: 20px;
+	font-size: 16px;
+	line-height: 1.7em;
+	font-weight: 100;
+}
+
 /* filter and overlay */ 
 
-#sidebar {
+#filterCont {
 	position: fixed;
 	top: 60px;
 	width: 185px;
@@ -229,20 +197,21 @@ h4 {
 /* team */ 
 
 #team-wrap {
-	position: absolute;
-	top: 70px;
-	right: -88%;
-	width: 85%;
-	margin: 0;
+	position: fixed;
+	width: 84%;
+	left: 8%;
 	max-width: 1300px;
-	padding: 5% 1% 0% 1%;
+	padding: 80px 1%;
 	color: rgba(57,57,57,0.7);
-	background: #f5f5f5;
-	border-left: 1px solid #dfdfdf;
-	border-right: 1px solid #dfdfdf;
-	border-bottom: 1px solid #dfdfdf;
-	z-index: 99999;
-	box-shadow:   3px 3px 2px 1px rgba(209,209,209,0.20);
+	background: rgba(255,255,255,0.2);
+	border-left: 1px solid rgba(255,255,255,0.2);
+	border-right: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	opacity: 0;
+	z-index: 909999;
+	overflow: scroll;
+	height: 100%;
+	display: none;
 }
 
 .team-title {
@@ -477,7 +446,9 @@ ul#storyline li.productSeperator {
 	max-width: 920px;
 }
 
-.story-item .left-story img {}
+.story-item .left-story img {
+	cursor: pointer;
+}
 
 .story-item .right-story {
 	width: 43%;	
@@ -568,6 +539,7 @@ ul#storyline .slider {
 	width: 100%;
 	text-align: left;
 	padding: 0;
+	display: none;
 }
 ul#storyline .slider ul, ul#storyline .slider ol{ 
 	margin: 0 !important; 
@@ -610,4 +582,115 @@ ul#storyline .slider .dots li {
 ul#storyline .slider .dots li.active {
 	background: #fff;
 	opacity: 1;
+}
+
+/* lightbox */
+
+#lightbox {
+	padding: 30px;
+	max-width: 1200px;
+	max-height: 100%;
+	overflow-y: scroll;
+	display: none;
+	position: relative;
+	margin: 70px auto 0 auto;
+}
+
+#lbClose {
+	text-transform: uppercase;
+	margin-top: 25px;
+	color: rgba(33,33,33,0.5);
+	text-align: center;
+}
+
+#lbClose:hover {
+	color: rgba(33,33,33,0.7);
+	cursor: pointer;
+}
+
+/* css3 animations */
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fadeInDown {
+	-webkit-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	-o-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	-o-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeInDown;
+	-moz-animation-name: fadeInDown;
+	-o-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
+
+.fadeInDownNoD {
+	-webkit-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	-o-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-delay: 0;
+	-moz-animation-delay: 0;
+	-o-animation-delay: 0;
+	animation-delay: 0;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeInDown;
+	-moz-animation-name: fadeInDown;
+	-o-animation-name: fadeInDown;
+	animation-name: fadeInDown;
 }

@@ -10,19 +10,20 @@
 </head>
 <body>
 <div id="cont">
-<div id="white-overlay"></div> <!-- overlay -->
+<div id="NDA-overlay"></div> <!-- NDA overlay -->
+<div id="white-overlay"><div id="lightbox"></div></div> <!-- overlay -->
 	<div id="top" class="fadeInDown">
 		<div id="logo">
-			<img src="img/avglogo.svg" width="90px" height="" />
+			<img id="whiteLogo" src="img/avgux-white.svg" width="90px" height="" />
+			<img id="blackLogo" src="img/avgux-black.svg" width="90px" height="" />
 		</div><!-- end logo -->  
 		<div id="about">The Team</div>
 		<div id="filters">Filters</div>
 
-		<div id="filterclose">Hide Filters</div>
-		<div id="aboutclose">Close</div>
+		<div id="overlayclose">Close</div>
 
 	</div> <!-- end div#top -->
-	<div id="sidebar">
+	<div id="filterCont">
 		<h2 id="filter">Filter List</h2>
 		<ul id="filter-list">
 			<li id="all" attr="all"><a class="current">no filters</a></li>
@@ -35,12 +36,12 @@
 			<li attr="wire"><a>wireframes</a></li> <!-- filter class= 'wire' -->
 			<li attr="proto"><a>interactive prototype</a></li> <!-- filter class= 'proto' -->
 		</ul>	
-	</div> <!-- emd sidebar -->
+	</div> <!-- emd filterCont -->
 	
 	<div id="team-wrap">
 		<h1 class="team-title">Meet the team</h1>
 		<ul id="team-thumbnails" class="clearfix">
-			<li><img src="img/team/jakyung.png" alt="Jakygun Kim"></li>
+			<li><img src="img/team/jakyung.png" alt="Jakyugn Kim"></li>
 			<li><img src="img/team/andressa.png" alt="Andressa Bougleux"></li>
 			<li><img src="img/team/eric.png" alt="Eric Townsend"></li>
 			<li><img src="img/team/michelle.png" alt="Michelle Ho"></li>
@@ -52,6 +53,7 @@
 				<div class="left">
 					<img src="img/team/mark.png" alt="Mark Bumanglag">	
 				</div><!-- end team left wrap --> 
+
 				<div class=" left">
 					<h1 class="">Mark Bumanglag</h1>
 					<h2 class="">User Experience Web Designer</h2>
@@ -97,6 +99,24 @@
 			<div class="team-right-wrap">
 				<a href="http://www.jakyungdesign.com/" target="_blank" class="team-btn">Portfolio</a>
 				<a href="http://2nerd.com/wp-content/uploads/2013/04/Cat-Resume.jpg" target="_blank" class="team-btn">Resume</a>
+			</div><!-- end team right -->
+		</div><!-- end team item --> 
+		
+		<div class="team-item">
+			<div class="team-left-wrap">
+				<div class="left">
+					<img src="img/team/rachel.png" alt="Rachel Schmitz">	
+				</div><!-- end team left wrap --> 
+				<div class=" left">
+					<h1 class="">Rachel Schmitz</h1>
+					<h2 class="">User Experience Web Designer</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum aliquam leo ut consectetur. Sed adipiscing justo quis diam tincidunt, at lacinia dolor suscipit. Duis mattis nibh metus. In in mauris turpis. Phasellus sed arcu gravida, venenatis odio sed, sollicitudin turpis. Donec vel libero quam.</p>
+
+				</div><!-- end right -->
+			</div><!-- end team left -->
+			<div class="team-right-wrap">
+				<a href="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/6/19/12/enhanced-buzz-15171-1371660524-29.jpg" target="_blank" class="team-btn">Portfolio</a>
+				<a href="http://s3-ec.buzzfed.com/static/enhanced/webdr01/2013/6/19/13/enhanced-buzz-2672-1371662106-2.jpg" target="_blank" class="team-btn">Resume</a>
 			</div><!-- end team right -->
 		</div><!-- end team item --> 
 		
@@ -342,8 +362,14 @@
 					<div class="left-wrap">
 						<div class="slider">
 						    <ul>
-						        <li class="slide"><img class="heightMax slide" src="img/assets/v1_bho_v1.jpg" alt="v0_bho_1" /></li>
-						        <li class="slide"><img class="slide" src="img/assets/v1_bho_v2.jpg" alt="v0_bho_1" /></li>
+						    	<li class="slide"><img src="img/assets/01_aboutBHO.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_aboutRewards.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_homepage-navHover2.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_legal.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_merchantDetail-1.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_merchantDetail-2.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_register.jpg" alt="01_aboutBHO" /></li>
+						    	<li class="slide"><img src="img/assets/01_userAccount.jpg" alt="01_aboutBHO" /></li>
 						    </ul>
 						</div>
 					</div>
@@ -351,26 +377,88 @@
 				<div class="right-story">					
 						<h2 class="title">Wireframes</h2>
 						<h3 class="type"><b>WEB</b> / v1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum.</p>
+						<p>At this point we had developed these wireframes to lead development for the project</p>
 						<p class="icon"><img src="img/icons/Wireframe.png"/></p>
 				</div>
 			</li> <!-- END story-item -->
-			<li class="story-item mock bho"> <!-- START story-item -->
+			
+			<li class="story-item wire web"> <!-- START story-item -->
 				<div class="left-story">
 					<div class="left-wrap">
 						<div class="slider">
 						    <ul>
-						        <li class="slide"><img class="slide" src="img/assets/v1_rewards_merchant.jpg" alt="v0_bho_1" /></li>
-						        <li class="slide"><img class="slide" src="img/assets/v1_rewards_home.jpg" alt="v0_bho_1" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/02_homepage-guidelines1.jpg" alt="v0_bho_1" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/02_homepage-guidelines2.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/02_legal_guidelines1.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/02_merchantDetail_guidelines1.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/02_merchantDetail_guidelines2.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/02_userAccount_guidelines.jpg" /></li>
 						    </ul>
 						</div>
 					</div>
 				</div>
 				<div class="right-story">					
-						<h2 class="title">Mockups</h2>
+						<h2 class="title">Wireframes: Structure and Sizing Guildelines</h2>
 						<h3 class="type"><b>WEB</b> / v1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum.</p>
+						<p>Rewards website wireframes with type guidelines displayed</p>
+						<p class="icon"><img src="img/icons/Wireframe.png"/></p>
+				</div>
+			</li> <!-- END story-item -->
+			
+			<li class="story-item wire web"> <!-- START story-item -->
+				<div class="left-story">
+					<div class="left-wrap">
+						<div class="slider">
+						    <ul>
+						        <li class="slide"><img class="slide" src="img/assets/type_Guidelines-1.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/type_Guidelines-2.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/type_Guidelines-3.jpg" /></li>
+						        
+						    </ul>
+						</div>
+					</div>
+				</div>
+				<div class="right-story">					
+						<h2 class="title">Wireframes: Typography Guildelines</h2>
+						<h3 class="type"><b>WEB</b> / v1</h3>
+						<p>Rewards website wireframes with type guidelines displayed</p>
+						<p class="icon"><img src="img/icons/Wireframe.png"/></p>
+				</div>
+			</li> <!-- END story-item -->
+			
+			<li class="story-item mock web"> <!-- START story-item -->
+				<div class="left-story">
+					<div class="left-wrap">
+						<div class="slider">
+						    <ul>
+						        <li class="slide"><img class="slide" src="img/assets/v1_rewards_home.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/v1_rewards_merchant.jpg" /></li>						        
+						    </ul>
+						</div>
+					</div>
+				</div>
+				<div class="right-story">					
+						<h2 class="title">Visual Mockups</h2>
+						<h3 class="type"><b>WEB</b> / v1</h3>
+						<p>Visual mockups created with a new approach to the review systems.</p>
 						<p class="icon"><img src="img/icons/Mock.png"/></p>
+				</div>
+			</li> <!-- END story-item -->
+			
+			<!-- ------------------------------------------------- START BHO V2 -->
+			<li class="productSeperator"><h4><b>BHO</b> / v2</li>
+			
+			<li class="story-item proto bho"> <!-- START story-item -->
+				<div class="left-story">
+					<div class="left-wrap">
+						<img src="img/assets/v2_bho_proto.jpg" />
+					</div>
+				</div>
+				<div class="right-story">					
+						<h2 class="title">BHO v2 Prototype</h2>
+						<h3 class="type"><b>WEB</b> / v2</h3>
+						<p><a href="proto/bhov2_proto/notification.html" target="_blank">Click to view prototype</a></p>
+						<p class="icon"><img src="img/icons/Prototype.png"/></p>
 				</div>
 			</li> <!-- END story-item -->
 			
@@ -383,10 +471,8 @@
 					<div class="left-wrap">
 						<div class="slider">
 						    <ul>
-						        <li class="slide"><img class="slide" src="img/assets/v2_rewards_home.jpg" /></li>
-						        <li class="slide"><img class="slide" src="img/assets/v2_rewards_merchant.jpg" /></li>
-						        <li class="slide"><img class="slide" src="img/assets/v2_rewards_search.jpg" /></li>
-						        
+						        <li class="slide"><img class="slide" src="img/assets/v1_rewards_home.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/v1_rewards_merchant.jpg" /></li>						        
 						    </ul>
 						</div>
 					</div>
@@ -394,48 +480,94 @@
 				<div class="right-story">					
 						<h2 class="title">Visual Mockups</h2>
 						<h3 class="type"><b>WEB</b> / v2</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum.</p>
+						<p>After receiving feedback on the v1 mockups we have re-designed parts</p>
 						<p class="icon"><img src="img/icons/Mock.png"/></p>
 				</div>
 			</li> <!-- END story-item -->
 			
 			<li class="time"><h4><b>01</b>/13</li> <!-- DATE 01/13 -->
 			<li class="time"><h4><b>02</b>/13</li> <!-- DATE 02/13 -->
+			<!-- ------------------------------------------------- START WEB V3.1 -->
+			<li class="productSeperator"><h4><b>WEB</b> / v3.1</li> 
 			<li class="time"><h4><b>03</b>/13</li> <!-- DATE 03/13 -->
-			<li class="time"><h4><b>04</b>/13</li> <!-- DATE 04/13 -->
-			<li class="time"><h4><b>05</b>/13</li> <!-- DATE 05/13 -->
+			<!-- ------------------------------------------------- START WEB V3.2 -->
 			
-			<li class="story-item mock"> <!-- START story-item -->
+			amazon_horizontal.jpg
+			
+			<li class="story-item mock web"> <!-- START story-item -->
 				<div class="left-story">
 					<div class="left-wrap">
-						<img src="img/assets/v0_bho_mock_1.jpg" alt="v0_bho_1" width="430" />
+						<div class="slider">
+						    <ul>
+						        <li class="slide"><img class="slide" src="img/assets/amazon_horizontal.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/amazon_vertical.jpg" /></li>						        
+						    </ul>
+						</div>
 					</div>
 				</div>
 				<div class="right-story">					
-						<h2 class="title"> Mockup</h2>
-						<h3 class="type"><b>BHO</b> / v0</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+						<h2 class="title">Amazon Feature Deals</h2>
+						<h3 class="type"><b>WEB</b> / v3</h3>
+						<p>These mockups were created to look at how Amazon products can be integrated in our search results feed.</p>
 						<p class="icon"><img src="img/icons/Mock.png"/></p>
 				</div>
 			</li> <!-- END story-item -->
-
 			
-			<li class="time"><h4><b>06</b>/13</li> <!-- DATE 06/13 -->
-			
-			<li class="story-item mock"> <!-- START story-item -->
+			<li class="story-item mock web"> <!-- START story-item -->
 				<div class="left-story">
 					<div class="left-wrap">
-						<img src="img/assets/v0_bho_mock_1.jpg" alt="v0_bho_1"  />
+						<div class="slider">
+						    <ul>
+						        <li class="slide"><img class="slide" src="img/assets/amazon_horizontal.jpg" /></li>
+						        <li class="slide"><img class="slide" src="img/assets/amazon_vertical.jpg" /></li>						        
+						    </ul>
+						</div>
 					</div>
 				</div>
 				<div class="right-story">					
-						<h2 class="title">Initial Mockup <i class="icon-code"></i> </h2> 
-						<h3 class="type"><b>BHO</b> / v0</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus orci non ligula eleifend interdum. Aenean lacinia, augue non ornare scelerisque, purus mauris volutpat tortor, euismod lorem nisi vel tortor. Donec vel egestas magna. Vivamus ante erat, semper in neque porttitor, convallis pharetra ante. Cras vel neque tincidunt, rutrum urna id, tristique erat. Donec suscipit eros eget nunc pellentesque, a aliquam ipsum.</p>
+						<h2 class="title">Visual Mockups</h2>
+						<h3 class="type"><b>WEB</b> / v3</h3>
+						<p>After receiving feedback on the v1 mockups we have re-designed parts</p>
 						<p class="icon"><img src="img/icons/Mock.png"/></p>
-				</div> <!-- end right-story --> 
-			</li> <!-- END story-item --> <!-- end story-item --> 
-
+				</div>
+			</li> <!-- END story-item -->
+			
+			<li class="productSeperator"><h4><b>WEB</b> / v3.2</li> 
+			<!-- ------------------------------------------------- START WEB V3.3 -->
+			<li class="productSeperator"><h4><b>WEB</b> / v3.3</li> 
+			<li class="time"><h4><b>04</b>/13</li> <!-- DATE 04/13 -->
+			<li class="time"><h4><b>05</b>/13</li> <!-- DATE 05/13 -->			
+			<li class="time"><h4><b>06</b>/13</li> <!-- DATE 06/13 -->
+			
+			<li class="story-item proto web"> <!-- START story-item -->
+				<div class="left-story">
+					<div class="left-wrap">
+						<img src="img/assets/v99_rewards_home.jpg" />
+					</div>
+				</div>
+				<div class="right-story">					
+						<h2 class="title">Interactive Prototype</h2>
+						<h3 class="type"><b>WEB</b> / v3</h3>
+						<p>This is an interactive prototype developed for a user research study comparing AVG Rewards products to other products within the <br />e-commerce market.</p>
+						<p><a href="proto/webv3_proto/AVG%20Rewards.html" target="_blank">Click to view prototype</a></p>
+						<p class="icon"><img src="img/icons/Prototype.png"/></p>
+				</div>
+			</li> <!-- END story-item -->
+			
+			<li class="story-item ux web"> <!-- START story-item -->
+				<div class="left-story">
+					<div class="left-wrap">
+						<img src="img/assets/v99_rewards_home.jpg" />
+					</div>
+				</div>
+				<div class="right-story">					
+						<h2 class="title">User Research Study Results</h2>
+						<h3 class="type"><b>WEB</b> / v3</h3>
+						<p>This is an interactive prototype developed for a user research study comparing AVG Rewards products to other products within the <br />e-commerce market.</p>
+						<p><a href="proto/webv3_proto/AVG%20Rewards.html" target="_blank">Click to view prototype</a></p>
+						<p class="icon"><img src="img/icons/UX.png"/></p>
+				</div>
+			</li> <!-- END story-item -->
 		</ul>
 		
 	</div> <!-- end div#main --> 
@@ -447,87 +579,104 @@
 	
 $(function () {
 	var isSidebarOpen = 0; //0 is closed, 1 is open
+	
 	$('#filters').click(function(){
-		if( isSidebarOpen == 0 ){
-    		$('#sidebar').animate({right:'0'});
+		if( isSidebarOpen == 0 ){ // not open
+    		$('#filterCont').animate({right:'0'});
     		$('#white-overlay').css({display:'block'});
+    		
+    		// top section 
     		$('#filters').addClass('on');
-    		$('#filterclose').css({display:'block'}).animate({opacity:1},300);
-    		isSidebarOpen = 1;
-    	} else if( isSidebarOpen == 1 ){
-	    	$('#sidebar').animate({right:'-240px'});
-	    	$('#white-overlay').delay(300).queue( function(next){ 
+    		$('#about').addClass('on');
+    		$('#top').addClass('white');
+    		$('#blackLogo').css({display:'block'}).animate({opacity:1},300);
+       		$('#whiteLogo').animate({opacity:'0'}).delay(300).queue( function(next){ 
 				$(this).css('display','none'); 
 				next(); 
 			});
-	    	$('#filters').removeClass('on');
-	    	$('#filterclose').animate({opacity:0}).css({display:'none'});
-	    
-	    	$('#about').removeClass('on');
-	    	$('#aboutclose').animate({opacity:0}).css({display:'none'});
-    		isSidebarOpen = 0;
+    		
+    		$('#overlayclose').css({display:'block'}).animate({opacity:1},300);
+    		isSidebarOpen = 1;
+    	} else if( isSidebarOpen == 1 ){ // is open
+    		//close team section
+	    	$('#team-wrap').animate({opacity:'0'}).delay(300).queue( function(next){ 
+				$(this).css('display','none'); 
+				next(); 
+			});    		
+    		//open filter section
+		   $('#filterCont').animate({right:'0'});
     	};
     });
     
+    $('#about').click(function(){
+		if( isSidebarOpen  == 0 ){ // not open
+    		$('#team-wrap').css({display:'block'}).animate({opacity:'1'});
+    		$('#white-overlay').css({display:'block'});
+    		
+    		// top section 
+    		$('#filters').addClass('on');
+    		$('#about').addClass('on');
+    		$('#top').addClass('white');
+    		$('#blackLogo').css({display:'block'}).animate({opacity:1},300);
+       		$('#whiteLogo').animate({opacity:'0'}).delay(300).queue( function(next){ 
+				$(this).css('display','none'); 
+				next(); 
+			});
+    		
+    		$('#overlayclose').css({display:'block'}).animate({opacity:1},300);
+    		$('#aboutclose').css({display:'block'}).animate({opacity:1},200);
+    		isSidebarOpen = 1;
+    	} else if( isSidebarOpen == 1 ){
+		   //close filter section
+		    $('#filterCont').animate({right:'-240px'});
+    		//open team section
+	    	$('#team-wrap').css({display:'block'}).animate({opacity:'1'});
+		}; 
+    });
+    
     function filterClose(){
-	    $('#sidebar').animate({right:'-240px'});
+    	//close filter section
+	    $('#filterCont').animate({right:'-240px'});
+    	
+    	//close team section
+    	$('#team-wrap').animate({opacity:'0'}).delay(300).queue( function(next){ 
+			$(this).css('display','none'); 
+			next(); 
+		});
+    	
+    	//hide overlay
     	$('#white-overlay').delay(300).queue( function(next){ 
 			$(this).css('display','none'); 
 			next(); 
 		});
+		
+		// turn off button 'on' states
     	$('#filters').removeClass('on');
-    	$('#filterclose').animate({opacity:0}).css({display:'none'});
-		isSidebarOpen = 0;
-    };
-    
-	$('#about').click(function(){
-		if( isSidebarOpen  == 0 ){
-    		$('#team-wrap').animate({right:'8%'});
-    		$('#white-overlay').css({display:'block'});
-    		$('#about').addClass('on');
-    		$('#aboutclose').css({display:'block'}).animate({opacity:1},200);
-    		isSidebarOpen = 1;
-    	} else if( isSidebarOpen == 1 ){
-	    	$('#team-wrap').animate({right:'-85%'});
-	    	$('#white-overlay').delay(200).queue( function(next){ 
-				$(this).css('display','none'); 
-				next(); 
-			});
-	    	$('#about').removeClass('on');
-	    	$('#aboutclose').animate({opacity:0}).css({display:'none'});
-    		isSidebarOpen = 0;
-    	};
-    });
-    
-    function teamClose(){
-	    $('#team-wrap').animate({right:'-100%'});
-    	$('#white-overlay').delay(200).queue( function(next){ 
+    	$('#about').removeClass('on');
+    	$('#top').removeClass('white');
+    	$('#whiteLogo').css({display:'block'}).animate({opacity:1},300);
+   		$('#blackLogo').animate({opacity:'0'}).delay(300).queue( function(next){ 
 			$(this).css('display','none'); 
 			next(); 
 		});
-    	$('#about').removeClass('on');
-    	$('#aboutclose').animate({opacity:0}).css({display:'none'});
+    	
+    	//hide overlay button
+    	$('#overlayclose').animate({opacity:0}).css({display:'none'});
+    	
+    	// close lightbox if needed
+    	$('#lightbox').css({display:'none'});
+    	
+    	//reset status var
 		isSidebarOpen = 0;
     };
- 
-    $('#aboutclose').click(teamClose);
-    $('#filterclose').click(filterClose);
-    $('#filterclose').click(teamClose);
-    $('#white-overlay').click(filterClose);
-    $('#white-overlay').click(teamClose);
-    $("img").unveil(1000);
     
-    $('.slider').unslider({
-    	speed: 500,               //  The speed to animate each slide (in milliseconds)
-		delay: 3000000,              //  The delay between slide animations (in milliseconds)
-		pause: true,    		  // pause on hover (boolean)
-		complete: function() {},  //  A function that gets called after every slide animation
-		keys: true,               //  Enable keyboard (left, right) arrow shortcuts
-		dots: true,               //  Display dot navigation
-		fluid: false              //  Support responsive design. May break non-responsive designs
-    }); //UNSLIDER
+    $('#overlayclose').click(filterClose);
+	$('#white-overlay').click(filterClose);
+    
+    
     $("img").not('.slide').unveil(1000);
     
+
 });
 
 var filtered = 0; //0 is none, 1+ is filtered
@@ -560,6 +709,26 @@ $("#filter-list>li").click(function(){
 		};
  	};
 });
+
+$('.left-wrap img').click(function(){
+	$('#white-overlay').css({display:'block'});
+	
+	var image = $(this).attr('src');
+	$('#lightbox').html('<img src="'+ image+ '" class="fadeInDownNoD" width="100%" /><br /><p id="lbClose">Click anywhere to close</p>').toggle();
+});
+
+$(window).load(function() {
+      $('.slider').show().unslider({
+    	speed: 500,               //  The speed to animate each slide (in milliseconds)
+		delay: 3000000,              //  The delay between slide animations (in milliseconds)
+		pause: true,    		  // pause on hover (boolean)
+		complete: function() {},  //  A function that gets called after every slide animation
+		keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+		dots: true,               //  Display dot navigation
+		fluid: false              //  Support responsive design. May break non-responsive designs
+    }); //UNSLIDER
+});
+    
 </script>
 </body>
 </html>

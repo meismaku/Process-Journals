@@ -1,0 +1,8 @@
+document.write(' <style type=\"text/css\"\>\n <!--\n .BVQASummaryBox * {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px;}\n .BVQASummaryBox a {color: #339; text-decoration: underline;}\n .BVQASummaryBox a:hover {color: #66c; text-decoration: underline;}\n\n .BVQATitle {font-weight: bold; margin-top: 0; margin-bottom: 3px;}\n .BVQASummaryBoxQuestionAndAnswerCount {margin-top: 0; margin-bottom: 3px;}\n\n .BVQACount {display: inline;}\n .BVQANumber {display: inline; font-weight: bold;}\n --\>\n </style\>\n<div id=\"BVQASummaryBoxID\" class=\"BVQASummaryBox BVQASummaryBoxView\"\><a href=\"http://reviews.bestbuy.com/answers/3545/content/popup.htm?bvpage=http%3A%2F%2Freviews.bestbuy.com%2Fanswers%2F3545%2Fcategory%2Fabcat0401005%2Fquestions.htm%3Fformat%3Dembedded\" title=\"\" class=\"\" target=\"BVQAPopup\" onclick=\"window.open(this.href,\'BVQAPopup\',\'width=660,height=850,toolbar=0,location=1,resizable=1,scrollbars=1\').focus(); return false;\"\><h3 id=\"BVQASummaryBoxTitleID\" class=\"BVQATitle BVQASummaryBoxTitle\"\></h3\><div id=\"BVQASummaryBoxQuestionAndAnswerCountID\" class=\"BVQASummaryBoxQuestionAndAnswerCount\"\><span class=\"BVQACount BVQANonZeroCount\"\><span class=\"BVQANumber\"\>1,214</span\> Questions</span\><br /\><span class=\"BVQACount BVQANonZeroCount\"\><span class=\"BVQANumber\"\>1,675</span\> Answers</span\></div\>Ask. Answer. Learn.</a\></div\>');
+function bvPushContent() {
+if(window.BVQADisplayed) {
+window.BVQADisplayed(1214, 1675);
+}
+}
+window.BVQAisLoaded = 1;
+window.setTimeout("bvPushContent()", 0);
