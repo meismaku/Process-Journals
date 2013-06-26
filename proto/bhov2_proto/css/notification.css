@@ -1,0 +1,86 @@
+@font-face {
+	font-family: 'DINPro';
+	src: url('../font/dinpro.eot');
+	src: url('../font/dinpro.eot?#iefix') format('embedded-opentype'),
+		 url('../font/dinpro.woff') format('woff'),
+		 url('../font/dinpro.ttf') format('truetype'),
+		 url('../font/dinpro.svg#dinpro') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a img {
+	border: none;
+}
+
+body {
+	width: 127px;
+	height: 60px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	font-family:'DINPro';
+    /*overflow-y: scroll;
+    overflow-x: hidden;*/
+}
+
+
+
+div#cross {
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	background-image: url(../images/cross-normal.png);
+	background-repeat: no-repeat;
+}
+
+div#cross:hover {
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	background-image: url(../images/cross-hover.png);
+	background-repeat: no-repeat;
+}
+
+div#cross:active {
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	background-image: url(../images/cross-active.png);
+	background-repeat: no-repeat;
+}
+
+div#notification h1{
+	font-size: 15px;
+	font-weight: 400;
+	position: absolute;
+	right: 12px;
+	top: 18px;
+	color: #393939;
+	margin: 0px;
+	padding: 0px;
+}
+
+div#notification {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background-image: url(../images/notification-normal.png);
+	background-repeat: no-repeat;
+}
+
+div#notification:hover {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background-image: url(../images/notification-hover.png);
+	background-repeat: no-repeat;
+}
+
+div#notification:active {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background-image: url(../images/notification-hover.png);
+	background-repeat: no-repeat;
+}

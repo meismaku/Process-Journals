@@ -1,0 +1,608 @@
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+/*
+* AVG Rewards 1.0
+* By Mark Que Bumanglag(hi@mark-b.com), Eric Townsend (info@eric-townsend.com), JaKyung Kim (kim@jakyungdesign.com)	
+*/
+
+
+/* Main Left
+================================================== */
+
+#mainLeft {
+
+	
+}
+
+/*=======================/ Jakyung / detail.css / main left_merchantDetail / START /=========================*/
+div.merchantDetail {
+	padding-bottom: 25%;
+}
+/*======== .merchantDetail .merchantName / Start =========*/
+div.merchantDetail div.merchantName {
+
+}
+
+div.merchantDetail div.merchantName h1, div.merchantDetail div.merchantName h1 a {
+	font-weight: 100;
+	color: rgba(33,33,33,1);
+	padding-top: .1em;
+	text-decoration: none;
+}
+
+div.merchantDetail div.merchantName h2, div.merchantDetail div.merchantName h2 a {
+	font-size: 23px;
+	font-weight: 100;
+	font-style: italic;
+	color: rgba(33,33,33,1);
+	padding: 0;
+	margin-top: -0.9em;
+	text-decoration: none;
+}
+
+div.merchantDetail div.merchantName h3 {
+	color: rgba(33,33,33,1);
+	font-size: 13px;
+	font-weight: 300;
+	border-bottom: 2px solid rgba(139,146,175,0.72);
+	margin-top: -1.6em;
+}
+
+div.merchantDetail div.merchantName h3 a {
+	color: rgba(33,33,33,1);
+	text-decoration: none;
+	margin-left: 0.3em;
+}
+/*======== .merchantDetail .merchantName / End =========*/
+/*======== .merchantDetail .rating / Start =========*/
+div.merchantDetail ul.ratingContainer {
+	position: relative;
+}
+
+div.merchantDetail ul.ratingContainer li {
+	float: left;
+}
+
+ul.ratingContainer li.overallName {
+	
+}
+
+ul.ratingContainer li.overallName h3 {
+	font-size: 23px;
+	font-weight: 100;
+	margin-top: 0.4em;
+}
+
+
+
+ul.ratingContainer li.overallName h5 {
+	--text-align: center;
+	font-size: 12px;
+	font-weight: 300;
+	font-style: italic;
+	margin-bottom: .2em;
+	color: rgba(33,33,33,1);
+	padding: 0;
+	margin-top: -0.3em;
+	margin-left: 0.2em;
+}
+
+ul.ratingContainer li.overall_rating_li div {
+	width: 52px;
+	height: 69px;
+	float: left;
+	margin-top: 1.5em;
+	margin-right: 1.2em;
+	margin-left: 40px;
+	background-image: url('./rating_box_A.png');
+	background-repeat:no-repeat;
+	background-position: left top;
+}
+
+ul.ratingContainer li.overall_rating_li h4 {
+	font-size: 28px;
+	font-weight: 300;
+	text-align: center;
+	color: #FFF;
+	position: absolute;
+	left: 197px;
+	top: 31px;
+	line-height: 30px;
+	text-shadow:2px 2px 3px #444;
+}
+
+ul.ratingContainer li.detail_rating_li {
+	margin-top: 0.7em;
+}
+
+ul.ratingContainer li.detail_rating_li:nth-child(3) {
+	padding-left: 1.5em;
+}
+
+ul.ratingContainer li.detail_rating_li:nth-child(4) {
+	padding-left: 2em;
+}
+
+ul.ratingContainer li.detail_rating_li:nth-child(5) {
+	padding-left: 1.8em;
+}
+
+ul.ratingContainer li.detail_rating_li:nth-child(6) {
+	padding-left: 2.6em;
+}
+
+ul.ratingContainer li.detail_rating_li h3.ratingName {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 100;
+	line-height: 14px;
+	margin-top: 1.5em;
+}
+
+ul.ratingContainer li.detail_rating_li h4 {
+	text-align: center;
+	font-size: 15px;
+	line-height: 17px;
+	font-weight: 300;
+}
+
+/*======== .merchantDetail .rating / End =========*/
+/*======== .merchantDetail .description / Start =========*/
+div.merchantDetail div.description {
+	padding-top: 0.5em;
+	clear: both;
+}
+
+div.merchantDetail div.description h3 {
+	border-bottom: 1px solid rgba(139,146,175,0.72);
+	font-size: 23px;
+	font-weight: 100;
+	padding-bottom: 5px;
+	margin-bottom: .2em;
+	color: rgba(33,33,33,1);
+}
+
+div.merchantDetail div.description p {
+	font-size: 11px;
+	font-weight: 300;
+	line-height: 18px;
+	padding-bottom: 5px;
+	margin-bottom: .2em;
+	color: rgba(33,33,33,1);
+	padding-bottom: 10px;
+	margin-bottom: .2em;
+}
+/*======== .merchantDetail .description / End =========*/
+/*======== .merchantDetail .reviews / Start =========*/
+div.merchantDetail div.reviews {
+	clear: both;
+}
+
+div.merchantDetail div.reviews h3 {
+	font-size: 23px;	
+	font-weight: 100;
+	padding-bottom: 5px;
+	margin-bottom: .2em;
+	margin-top: -2.2em;
+	color: rgba(33,33,33,1);
+	border-bottom: 1px solid rgba(139,146,175,0.72);
+}
+
+div.merchantDetail div.reviews ul {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+div.merchantDetail div.reviews>ul>li {
+	padding-top:5px;
+	margin-bottom: 0;
+	margin-bottom: -0.4em;
+	font-size: 1.3em;
+	line-height: 1.1em;
+	font-weight: 400;
+	color: rgba(40,40,100,.7);
+}
+
+div.merchantDetail div.reviews ul li:nth-last-child(1) {
+	margin-bottom: -0.8em;
+}
+
+div.merchantDetail div.reviews ul li h5 {
+	font-size: 12px;
+	color: #222;
+	font-weight: 300;
+	float: left;
+	margin: 0;
+	padding: 0;
+	line-height: 15px;
+}
+
+div.merchantDetail div.reviews ul li h6 {
+	font-size: 12px;
+	color: #222;
+	font-weight: 300;
+	float: right;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+}
+
+div.merchantDetail div.reviews ul li p {
+	font-size: 11px;
+	font-weight: 300;
+	line-height: 18px;
+	color: #000;
+	padding-bottom: 0.2em;
+	border-bottom: 1px solid rgba(139,146,175,0.3);
+	clear: both;
+}
+
+#ReviewListSort {
+	color:rgba(33,33,33,0.5);	
+	margin-bottom: .2em;
+	vertical-align: middle;
+	position: relative;
+	cursor: default;
+	padding-bottom: .5em;
+	padding-top: 0.5em;
+	list-style: none;
+}
+
+#ReviewListSort h3 {
+	float: left;
+	color: rgba(33,33,33,1);
+	font-size: 2em;
+}
+
+#ReviewListSort div.sortButtons {
+	float: right;
+}
+
+#ReviewResultsNav {
+	float: right;
+	margin: 0;
+	padding: 0;
+	cursor: default;
+	color: rgba(33,33,33,0.7);
+	border-bottom: none;
+	margin-top: -0.5em;
+}
+
+#ReviewResultsNav:hover {
+	color: rgba(33,33,33,0.7);
+}
+
+#ReviewResultsNavText {
+	cursor: default;	
+	color: rgba(33,33,33,0.7);	
+}
+
+#ReviewResultsNav_Left, #ReviewResultsNav_Right {
+	cursor: pointer;
+	color: rgba(40,40,100,.7);	
+}
+
+#ReviewResultsNav_Left:hover, #ReviewResultsNav_Right:hover {
+	color: rgba(30,30,90,1);
+}
+/*======== .merchantDetail .reviews / End =========*/
+/*======== .merchantDetail .reviewsForm / Start =========*/
+div.merchantDetail div.reviewsForm {
+	clear: both;
+}
+
+div.merchantDetail div.reviewsForm h3 {
+	font-size: 23px;
+	font-weight: 100;
+	padding-bottom: 5px;
+	margin-bottom: .2em;
+	color: rgba(33,33,33,1);
+	border-bottom: 1px solid rgba(139,146,175,0.72);
+}
+
+div.merchantDetail div.reviewsForm ul {
+	margin-top: 0.3em;
+}
+
+div.sub_rating {
+	margin-top: 1em;
+	margin-left: 0.5em;
+}
+
+ul.sub_rating_ul {
+	margin: 0 2.8em 2em 0;
+	padding: 0;
+	float: left;
+}
+
+div.merchantDetail div.reviewsForm ul.sub_rating_ul li.ratingName {
+	font-size: 11px;
+	font-weight: 100;
+	color: #666;
+}
+
+/*update--resize rating section 01-14-13 ver.03 START*/
+
+span.rating_1 {
+	width: 27px;
+	height: 36px;
+	float: left;
+	margin: 3px 0px 0px 22px;
+    background-image:url('');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+span.rating_5, span.rating_4, span.rating_3, span.rating_2 {
+	width: 27px;
+	height: 36px;
+	float: left;
+	margin: 3px 0px 0px 4px;
+    background-image:url('');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+span.rating_1:hover, span.rating_active_1:hover, span.rating_hover_1 {
+	width: 27px;
+	height: 36px;
+	float: left;
+	margin: 3px 0px 0px 22px;
+    background-image:url('./One_star_hover_03.png');
+    background-repeat: no-repeat;
+ 	cursor: pointer;
+}
+
+span.rating_5:hover, span.rating_4:hover, span.rating_3:hover, span.rating_2:hover, span.rating_active_5:hover, span.rating_active_4:hover, span.rating_active_3:hover, span.rating_active_2:hover, span.rating_hover_5, span.rating_hover_4, span.rating_hover_3, span.rating_hover_2 {
+	width: 27px;
+	height: 36px;
+	float: left;
+	margin: 3px 0px 0px 4px;
+    background-image:url('./One_star_hover_03.png');
+    background-repeat: no-repeat;
+ 	cursor: pointer;
+}
+
+span.rating_active_1, span.rating_1:active {
+	width: 27px;
+	height: 36px;
+	float: left;
+	margin: 3px 0px 0px 22px;
+    background-image:url('./One_star_hover_03.png');
+    background-repeat: no-repeat;
+ 	cursor: pointer;
+}
+
+span.rating_active_5, span.rating_active_4, span.rating_active_3, span.rating_active_2, span.rating_5:active, span.rating_4:active, span.rating_3:active, span.rating_2:active {
+	width: 27px;
+	height: 36px;
+	float: left;
+	margin: 3px 0px 0px 4px;
+    background-image:url('./One_star_hover_03.png');
+    background-repeat: no-repeat;
+ 	cursor: pointer;
+}
+
+/*update--resize rating section 01-14-13 ver.03 END*/
+
+div.merchantDetail .icon-comments-alt {
+	font-size: 90%;
+	margin-left: 7px;
+	font-weight: 200;
+	cursor: pointer;
+}
+
+div.merchantDetail .icon-comment-alt {
+	font-size: 90%;
+	margin-left: 10px;
+	font-weight: 200;
+}
+
+div.merchantDetail textarea {
+	font-size: 11px;
+	width: 99%;
+	height: 100px;
+	max-width: 99%;
+	max-height: 100px;
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	text-align: -webkit-auto;
+	-webkit-user-select: text;
+	-webkit-appearance: textfield;
+	-webkit-rtl-ordering: logical;
+	padding: 0.1em 0.3em;
+	overflow: auto;
+}
+
+div.merchantDetail input {
+	float: left;
+	margin-top: 1em;
+	
+}
+/*======== .merchantDetail .reviewsForm / End =========*/
+/*=======================/ Jakyung / detail.css / main left_merchantDetail / END /=========================*/
+
+/* Main Right
+================================================== */
+
+#mainRight {
+	
+}
+
+div.rList {
+	position: relative;
+}
+
+/*=======================/ Jakyung / detail.css / main left_merchantDetail / START /=========================*/
+/*======== .merchantDeal / Start =========*/
+
+div.merchantDeal {
+
+}
+
+h3.rLHeader {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 5px;
+	color: #656767;
+}
+
+ul.rLPad2 {
+
+	margin-right: 10px;
+	padding-bottom: 10px;
+	color: #393939;
+}
+
+ul.rLPad2 li {
+	margin-left: 10px;
+	border-bottom: 1px solid rgba(77,77,77,0.1);
+	padding-bottom: 3px;
+	color: rgba(33,33,33,0.5s);
+	font-weight: 400;
+}
+
+span.rLMerchantSpan {	
+	font-weight: 700;
+}
+/*======== .merchantDeal / End =========*/
+
+
+
+/* #Media Queries
+================================================== */
+
+	@media only screen and (min-width: 960px) and (max-width: 1280px) {
+	
+	div.merchantDetail {
+		padding-bottom: 33.5%;
+	}
+	
+	ul.ratingContainer li.detail_rating_li {
+		margin-top: 0.4em;
+	}
+	
+	ul.ratingContainer li.detail_rating_li:nth-child(3) {
+		padding-left: 1em;
+	}
+	
+	ul.ratingContainer li.detail_rating_li:nth-child(4) {
+		padding-left: 0.7em;
+	}
+	
+	ul.ratingContainer li.detail_rating_li:nth-child(5) {
+		padding-left: 0.8em;
+	}
+	
+	ul.ratingContainer li.detail_rating_li:nth-child(6) {
+		padding-left: 1.4em;
+	}
+	
+	ul.ratingContainer li.detail_rating_li h3.ratingName {
+		text-align: center;
+		font-size: 12px;
+		font-weight: 100;
+		line-height: 14px;
+		margin-top: 1.5em;
+	}
+	
+	ul.ratingContainer li.detail_rating_li h4.rating_A {
+		text-align: center;
+		font-size: 15px;
+		line-height: 17px;
+		font-weight: 400;
+	}
+	
+	div.sub_rating {
+		margin: 0;
+	}
+	
+	ul.sub_rating_ul {
+		margin: 2em 0em 2em 0em;
+		padding: 0;
+		float: left;
+	}
+	
+	li.rating_A,li.rating_B, li.rating_C, li.rating_D, li.rating_F {
+		width: 9px;
+		height: 9px;
+		float: left;
+		margin-top: 0.3em;
+		margin-right: 0.3em;
+		margin-bottom: 0.5em;
+		text-align: center;
+		font-size: 11px;
+		font-weight: 100;
+		padding: 6px 7px 10px 7px;
+		border: 1px solid rgba(80, 80, 80, 0.2);
+		color: #FFF;
+	}
+	
+	li.rating_A:hover,li.rating_B:hover, li.rating_C:hover, li.rating_D:hover, li.rating_F:hover{
+		width: 9px;
+		height: 9px;
+		float: left;
+		margin-top: 0.3em;
+		margin-right: 0.3em;
+		margin-bottom: 0.5em;
+		text-align: center;
+		font-size: 11px;
+		font-weight: 100;
+		color: #777;
+		padding: 6px 7px 10px 7px;
+		background: #FFF;
+	  	border: 1px solid #555;
+	 	cursor: pointer;
+	}
+	
+	li.rating_A:active,li.rating_B:active, li.rating_C:active, li.rating_D:active, li.rating_F:active{
+		width: 9px;
+		height: 9px;
+		float: left;
+		margin-top: 0.3em;
+		margin-right: 0.3em;
+		margin-bottom: 0.5em;
+		text-align: center;
+		font-size: 11px;
+		font-weight: 100;
+		color: #FFF;
+		padding: 6px 7px 10px 7px;
+		background: #CCC;
+	  	border: 1px solid #FFF;
+	 	cursor: pointer;
+	}
+
+	
+	}
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+	
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+

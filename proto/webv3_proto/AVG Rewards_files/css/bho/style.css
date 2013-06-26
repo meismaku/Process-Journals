@@ -1,0 +1,647 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,ul {
+    list-style: none
+}
+
+blockquote,q {
+    quotes: none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+/* Default styles */
+body {
+    font-family: "Open Sans", "Helvetica", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 16px;
+}
+
+h2 {
+    font-family: "Open Sans";
+}
+
+/* Reusable Classes */
+.main {
+    padding: 0 10px;
+}
+
+.module {
+    background: rgba(255, 255, 255, 0.8);
+    width: 260px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: #58595B;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.b,span.b {
+    font-weight: bold;
+}
+
+.10space {
+    height: 10px;
+    clear: both;
+    min-width: 200px;
+    position: relative;
+}
+
+.opacity30 {
+    opacity: 0.3;
+}
+
+/* Targeted Styles */
+#wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 410px;
+}
+
+#wrap1 {
+    background: #334358;
+    padding-top: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow:    0px 0px 10px rgba(50, 50, 50, 0.55);
+    box-shadow:         0px 0px 10px rgba(50, 50, 50, 0.55);
+    margin: 10px;
+    color: white;
+}
+
+#head {
+    position: relative;
+    padding-bottom: 10px;
+    height: 20px;
+}
+
+#head h1 {
+    padding-top: 6px;
+    padding-left: 5px;
+}
+
+#windowActions {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+#minimizeBtn {
+    cursor: pointer;
+    display: inline;
+    opacity: .8;
+}
+
+#minimizeBtn:hover {
+    opacity: 1;
+}
+
+#upVote {
+    opacity: 0.8;
+    margin-right: 3px;
+}
+
+#downVote {
+    opacity: 0.8;
+}
+
+#downVote:hover,#upVote:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#closeBtn {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+
+#insideWrap {
+    background: rgb(238,238,238); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-top: 3px solid #2A974B;
+}
+
+/* DEAL LIST */
+#cListUL {
+    font-size: 12px;
+    color: #333333;
+    line-height: 15px;
+    height: 290px;
+    overflow: show;
+}
+
+.verticalScrollbar {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.scroll {
+    /* This class should be appended to all line items in #cListUL if a scrollbar is present */
+    margin-right: 10px !important;
+}
+
+#cListUL li {
+    padding: 10px 10px 10px 10px;
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 71%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(71%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 71%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 71%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 71%,rgba(237,237,237,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 71%,rgba(237,237,237,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+    margin-bottom: 10px;
+}
+
+#cListUL li:last-child {
+    margin-bottom: 5px;
+}
+
+#cListUL li:hover {
+    padding: 10px 5px 10px 10px;
+    cursor: pointer;
+    border-right: 5px solid #298d44;
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.55);
+    box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.55);
+}
+
+.listModHeight {
+    height: 250px !important;
+}
+
+.selected {
+    padding: 10px 10px 10px 10px !important;
+    color: #FFFFFF !important;
+    text-shadow: 0px 0px 4px #000000 !important;
+    filter: dropshadow(color = #000000, offx = 0, offy = 0) !important;
+    background: #298d44 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #298d44 0%, #44a272 100%) !important; /* FF3.6+ */
+    background-image: url(/img/bho/ajax-loader.gif), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #298d44), color-stop(100%, #44a272) ) !important; /* Chrome,Safari4+ */
+    background-image: url(/img/bho/ajax-loader.gif),  -webkit-linear-gradient(top, #298d44 0%, #44a272 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #298d44 0%, #44a272 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #298d44 0%, #44a272 100%) !important; /* IE10+ */
+    background: linear-gradient(to bottom, #44a272 0%, 100%) !important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#298d44', endColorstr='#44a272', GradientType=0 ); /* IE6-9 */
+    background-repeat:no-repeat !important;
+    background-position:98% 50% !important;
+}
+
+#moreClick {
+    text-align: right;
+    color: #30964E;
+    font-size: 10px;
+    background: none !important;
+    border: none !important;
+    height: 5px !important;
+    margin: 0;
+    padding: 0 0 15px 0 !important;
+}
+
+#moreClick:hover {
+    text-decoration: underline;
+    color: #30964E;
+    cursor: pointer;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/* BOTTOM */
+#bottom {
+    padding: 13px 0 15px 0;
+}
+
+#leftBottomUL {
+    float: left;
+    color: #A7A9AB;
+    font-size: 11px;
+    font-weight: 300;
+    padding-left: 10px;
+    position: relative;
+}
+
+#leftBottomUL li {
+    display: inline;
+    height: 10px;
+    padding-top: 10px;
+}
+
+#rightBottomUL {
+    float: right;
+    color: #FFFFFF;;
+    font-size: 12px;
+    font-weight: 300;
+    padding-right: 10px;
+    padding-top: 2px;
+    position: relative;
+}
+
+#rightBottomUL li {
+    display: inline;
+}
+
+.rbliSep {
+    opacity: .3;
+    padding: 0 3px;
+}
+
+#disableLI,#settingsLI {
+    padding: 2px 0;
+}
+
+#disableLI:hover,#settingsLI:hover {
+    border-top: 1px solid #2A974B;
+    cursor: pointer;
+}
+
+/* DISABLE DIALOG SCREEN STYLING */
+#Settings,#disableConfirm {
+    background: #3A3A3C;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow:    0px 0px 10px rgba(50, 50, 50, 0.55);
+    box-shadow:         0px 0px 10px rgba(50, 50, 50, 0.55);
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 999999;
+    width: 260px;
+    height: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#Settings p,#Settings input {
+    display: inline;
+    vertical-align: middle;
+}
+
+#Settings input {
+    height: 10px;
+   
+    margin: 0 0 0 5px;
+    cursor: pointer;
+}
+
+#disableConfirm p,#disableConfirm ul,#disableConfirm ul li {
+    display: inline;
+}
+
+#disableConfirm ul li {
+    padding: 1px 5px;
+    background: #219480;
+    border: 1px solid #439D9E;
+}
+
+#disableConfirm ul li:hover {
+    border: 1px solid #7FC65B;
+    cursor: pointer;
+}
+
+#arrow {
+    position: absolute;
+    top: -15px;
+    right: 17px;
+}
+
+/* Tiny Scrollbar */
+#scrollbar1 {
+    width: 260px;
+    margin: 20px 0 10px;
+}
+
+#scrollbar1 .viewport {
+    width: 240px;
+    height: 272px;
+    overflow: hidden;
+    position: relative;
+}
+
+#scrollbar1 .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#scrollbar1 .scrollbar {
+    background: transparent url(/img/bho/bg-scrollbar-track-y.png) no-repeat
+        0 0;
+    position: relative;
+    background-position: 0 0;
+    float: right;
+    width: 15px;
+}
+
+#scrollbar1 .track {
+    background: transparent url(/img/bho/bg-scrollbar-trackend-y.png)
+        no-repeat 0 100%;
+    height: 100%;
+    width: 13px;
+    position: relative;
+    padding: 0 1px;
+}
+
+#scrollbar1 .thumb {
+    background: transparent url(/img/bho/bg-scrollbar-thumb-y.png) no-repeat
+        50% 100%;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+#scrollbar1 .thumb .end {
+    background: transparent url(/img/bho/bg-scrollbar-thumb-y.png) no-repeat
+        50% 0;
+    overflow: hidden;
+    height: 5px;
+    width: 25px;
+}
+
+#scrollbar1 .disable {
+    display: none;
+}
+
+/* --------------  -welcome page   ------------ */
+.wrapAlt {
+    width: 450px !important;
+    height: 330px !important;
+    position: relative !important;
+    background: #334358;
+    padding-top: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.55);
+    box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.55);
+    margin: 10px;
+    color: #FFFFFF;
+}
+
+.headAlt {
+    width: 450px !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+#content {
+    position: relative;
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 71%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(71%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 71%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 71%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 71%,rgba(237,237,237,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 71%,rgba(237,237,237,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+    color:#333333;
+    padding-top: 10px;
+    border-top: 3px solid #2A974B;
+    height: 213px;
+    padding-bottom: 10px;
+}
+
+h1.welcomeh1 {
+    padding: 5px 0 15px 0 !important;
+    font-size: 24px;
+}
+
+h2.welcomeh2 {
+    width: 410px !important;
+    margin: 0 0 5px 0 !important;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+p.mainDesc {
+    font-size: 13px;
+    line-height: 18px;
+    clear: both;
+}
+
+#descUL {
+    margin: 10px 0 10px 0;
+    padding-bottom: 10px;
+}
+
+#descUL h2 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#descUL li {
+    margin: 10px 0 5px 0;
+    font-size: 13px;
+}
+
+/* button */
+#btnCont {
+    padding: 10px 10px 10px 10px;
+    height: 130px !important;
+    background: #334358;
+}
+
+div.button {
+    width: 187px;
+    text-align: center;
+    padding: 10px;
+    background: #219480;
+    border: 1px solid #439D9E;
+    font-size: 13px;
+}
+
+div.button:hover {
+    border: 1px solid #7FC65B;
+    cursor: pointer;
+    text-shadow: 0px 0px 4px #000000 !important;
+    filter: dropshadow(color = #000000, offx = 0, offy = 0) !important;
+}
+
+li.button{
+    cursor: pointer;
+}
+
+#leftBtn {
+    position: absolute;
+    left: 10px;
+    background: #298d44 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #298d44 0%, #44a272 100%) !important; /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #298d44), color-stop(100%, #44a272) ) !important; /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, #298d44 0%, #44a272 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #298d44 0%, #44a272 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #298d44 0%, #44a272 100%) !important; /* IE10+ */
+    background: linear-gradient(to bottom, #44a272 0%, 100%) !important; /* W3C */
+}
+
+#rightBtn {
+    position: absolute;
+    right: 10px;
+    border: 1px solid #9c9c9c;
+    background: rgb(137,125,125); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(137,125,125,1) 9%, rgba(173,152,152,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(9%,rgba(137,125,125,1)), color-stop(100%,rgba(173,152,152,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(137,125,125,1) 9%,rgba(173,152,152,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(137,125,125,1) 9%,rgba(173,152,152,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(137,125,125,1) 9%,rgba(173,152,152,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(137,125,125,1) 9%,rgba(173,152,152,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#897d7d', endColorstr='#ad9898',GradientType=0 ); /* IE6-9 */
+}
+
+#centerBtn {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: #219952 !important;
+}
+
+/* --------------  small notification   ------------ */
+#nSwrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(/img/bho/nSBACK.png);
+    width: 105px;
+    height: 80px;
+}
+
+#nSwrapper:hover {
+    cursor: pointer;
+    background: url(/img/bho/nSBACK-Hover.png);
+}
+
+#curlHide {
+	position: absolute;
+    top: 65px;
+    right: 5px;
+	background: url(/img/bho/close2.png);
+	height: 15px;
+	width: 15px;
+	z-index: 100000;
+	opacity: .6;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+}
+
+#curlHide:hover {
+
+	opacity: 1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	cursor: pointer;
+}
+
+#number {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    z-index: 99;
+    width: 36px;
+    height: 22px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#number h3 {
+    font-size: 18px;
+    height: 19px;
+    text-shadow: 0px 0px 4px #000000 !important;
+    filter: dropshadow(color = #000000, offx = 0, offy = 0) !important;
+    margin: 1px auto;
+}
+
+#number p {
+    margin: 1px auto;
+    font-size: 9px;
+    height: 9px;
+    text-shadow: 0px 0px 4px #000000 !important;
+    filter: dropshadow(color = #000000, offx = 0, offy = 0) !important;
+}
+
+#frontImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 188;
+    background: url(/img/bho/nSFRONT.png);
+    width: 105px;
+    height: 80px;
+    display: block;
+}
+
+#dealAccept {
+    z-index: 1000;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: none;
+}

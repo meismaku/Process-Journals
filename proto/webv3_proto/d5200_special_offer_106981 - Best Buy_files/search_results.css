@@ -1,0 +1,41 @@
+/* UI BUILD: Thursday, May 16 2013 at  1:15:23 PM -- BUILD ID: BRANCH_NAME: release VERSION: 13.09.93 */
+/* MD5: 1886b75bb5e7e7b66fda7b09ac88ad14 */
+
+﻿/* Breadcrumbs */
+#searchstate,#searchstatered,#searchstate a{font-size:12px;padding:10px 0 15px;}
+#searchclosest{color:#ae1231;font-size:11px;font-weight:bold;margin:5px 0;}
+#searchstatered{color:#ae1231;}
+
+/* Grid Results */
+#resultsGrid {width:760px;overflow:hidden;float:left;}
+#resultsGrid ul{border-bottom:1px solid #c3c4c4;float:left;list-style:none;margin:0;padding-top:20px;width:770px;margin-top:-21px;}
+#resultsGrid ul li{border-top:1px solid #e7e7e7;display:block;float:left;padding:20px 0;width:190px;display:block;}
+#resultsGrid ul li div.resultsGrid-result{border-right:1px solid #e7e7e7;padding:0 20px;width:150px;overflow:hidden;}
+#resultsGrid .image{text-align:center;margin:5px auto;display:block;height:140px}
+#resultsGrid .image a{ display: table-cell;vertical-align: bottom;width: 150px;height: 140px;}
+#resultsGrid .gameInfo{color:#085eb9;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;line-height:1.2;height:50px;overflow:hidden;margin-bottom:4px}
+#resultsGrid .gamePlatform{color:#49494a;font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;}
+#resultsGrid .tradePrice {margin-top:20px}
+#resultsGrid .tradePrice p {float:left;padding-right:5px}
+#resultsGrid .tradePrice strong{color:#235f2f;float:left;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:15px;}
+
+.search-item-notfound {color:#ae1231;font-size:14px;line-height:1.2;clear:left;}
+.error img{float:left}
+.tradeInValue{float:left;padding:0 0 0 15px;width:360px;font-weight:bold}
+.tradeInValue p{color:#49494a;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;margin:0;padding-bottom:4px}
+.tradeInContainer2{background:#f4f4f5;border-top:3px solid #c3c4c4;color:#49494a;float:left;font-size:12px;margin-bottom:20px;width:100%;height:125px;overflow:hidden}
+.storeLocator2{border-left:1px solid #e7e7e7;float:left;padding-left:15px;width:360px;font-weight:bold}
+.storeLocator2 p{font-weight:bold;margin:0;padding:0}
+.tradeInContainer2 h3{font-size:14px;margin:15px 0 20px}
+#tradeMessage{background:#fff200;clear:both;color:#49494a;font-size:12px;margin:20px 0;padding:10px 10px 10px 5px;line-height:25px}
+span.tradeIcon{display:inline-block;height:32px;margin-right:10px;vertical-align:middle;width:32px}
+#searchInput{margin-bottom:10px}
+.searchfield{width:260px}
+#bottom-padbar{margin-bottom:20px}
+
+/* The styles below should really inherit default styles */
+.notfound-platform-list {line-height:1.2;font-size:12px;color:#49494a;}
+.notfound-platform-list p {line-height:1.2;font-size:12px;color:#49494a;margin-bottom:10px;}
+.notfound-platform-list ul {line-height:1.2;font-size:12px;color:#49494a;padding-left:16px;margin-bottom:10px;}
+.notfound-platform-list li {line-height:1.2;font-size:12px;color:#49494a;}
+.csc-x-large-column{margin-bottom:0}
