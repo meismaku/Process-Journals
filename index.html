@@ -11,7 +11,7 @@
 <body>
 <div id="cont">
 <div id="NDA-overlay"></div> <!-- NDA overlay -->
-<div id="white-overlay"></div> <!-- overlay -->
+<div id="white-overlay"><div id="lightbox"></div></div> <!-- overlay -->
 	<div id="top" class="fadeInDown">
 		<div id="logo">
 			<img id="whiteLogo" src="img/avgux-white.svg" width="90px" height="" />
@@ -663,6 +663,9 @@ $(function () {
     	//hide overlay button
     	$('#overlayclose').animate({opacity:0}).css({display:'none'});
     	
+    	// close lightbox if needed
+    	$('#lightbox').css({display:'none'});
+    	
     	//reset status var
 		isSidebarOpen = 0;
     };
@@ -705,6 +708,13 @@ $("#filter-list>li").click(function(){
 			$("#all").find('a').html('clear filters');
 		};
  	};
+});
+
+$('.left-wrap img').click(function(){
+	$('#white-overlay').css({display:'block'});
+	
+	var image = $(this).attr('src');
+	$('#lightbox').html('<img src="'+ image+ '" class="fadeInDownNoD" width="100%" /><br /><p id="lbClose">Click anywhere to close</p>').toggle();
 });
 
 $(window).load(function() {
