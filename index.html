@@ -10,6 +10,7 @@
 </head>
 <body>
 <div id="cont">
+<div id="NDA-overlay"></div> <!-- NDA overlay -->
 <div id="white-overlay"></div> <!-- overlay -->
 	<div id="top" class="fadeInDown">
 		<div id="logo">
@@ -669,17 +670,10 @@ $(function () {
     $('#overlayclose').click(filterClose);
 	$('#white-overlay').click(filterClose);
     
-    $('.slider').unslider({
-    	speed: 500,               //  The speed to animate each slide (in milliseconds)
-		delay: 3000000,              //  The delay between slide animations (in milliseconds)
-		pause: true,    		  // pause on hover (boolean)
-		complete: function() {},  //  A function that gets called after every slide animation
-		keys: true,               //  Enable keyboard (left, right) arrow shortcuts
-		dots: true,               //  Display dot navigation
-		fluid: false              //  Support responsive design. May break non-responsive designs
-    }); //UNSLIDER
+    
     $("img").not('.slide').unveil(1000);
     
+
 });
 
 var filtered = 0; //0 is none, 1+ is filtered
@@ -712,6 +706,19 @@ $("#filter-list>li").click(function(){
 		};
  	};
 });
+
+$(window).load(function() {
+      $('.slider').show().unslider({
+    	speed: 500,               //  The speed to animate each slide (in milliseconds)
+		delay: 3000000,              //  The delay between slide animations (in milliseconds)
+		pause: true,    		  // pause on hover (boolean)
+		complete: function() {},  //  A function that gets called after every slide animation
+		keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+		dots: true,               //  Display dot navigation
+		fluid: false              //  Support responsive design. May break non-responsive designs
+    }); //UNSLIDER
+});
+    
 </script>
 </body>
 </html>

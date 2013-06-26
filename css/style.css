@@ -193,6 +193,18 @@ h4 {
 	color: rgb(57,57,57);
 }
 
+/* nda section */
+
+#overview p { 
+	margin: 20px 40px;
+	width: 490px;
+	background: rgba(0,0,0,0.5);
+	padding: 20px;
+	font-size: 16px;
+	line-height: 1.7em;
+	font-weight: 100;
+}
+
 /* filter and overlay */ 
 
 #filterCont {
@@ -256,7 +268,7 @@ h4 {
 	width: 84%;
 	left: 8%;
 	max-width: 1300px;
-	padding: 80px 1% 0% 1%;
+	padding: 80px 1%;
 	color: rgba(57,57,57,0.7);
 	background: rgba(255,255,255,0.2);
 	border-left: 1px solid rgba(255,255,255,0.2);
@@ -266,6 +278,7 @@ h4 {
 	z-index: 909999;
 	overflow: scroll;
 	height: 100%;
+	display: none;
 }
 
 .team-title {
@@ -591,6 +604,7 @@ ul#storyline .slider {
 	width: 100%;
 	text-align: left;
 	padding: 0;
+	display: none;
 }
 ul#storyline .slider ul, ul#storyline .slider ol{ 
 	margin: 0 !important; 
